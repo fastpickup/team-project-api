@@ -3,20 +3,10 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- Date   : 2023.07.31, Author : 권성준, E-mail : thistrik@naver.com -->
+<!-- Date   : 2023.08.03, Author : 권성준, E-mail : thistrik@naver.com -->
 <!-- StoreMapper Xml -->
 <mapper namespace="com.project.fastpickup.admin.store.mappers.StoreMapper">
 
-<!-- StoreMapper id = "createStore" -->
-<insert id="createStore" parameterType="com.project.fastpickup.admin.store.dto.StoreCreateDTO">
-  INSERT INTO tbl_store 
-  (storeName, storeNumber, storeAddress, email, storePhone)
-  VALUES
-  (#{storeName}, #{storeNumber}, #{storeAddress}, #{email}, #{storePhone})
-  <selectKey resultType="long" keyProperty="sno" order="AFTER">
-      select last_insert_id()
-    </selectKey>
-</insert>
 
 <!-- StoreMapper id = "readStore" -->
 <select id="readStore" parameterType="long">
@@ -32,40 +22,23 @@ FROM
 WHERE s.sno = #{sno};
 </select>
 
-<!-- StoreMapper id = "updateStore" -->
-<update id="updateStore" parameterType="com.project.fastpickup.admin.store.dto.StoreUpdateDTO">
-  UPDATE tbl_store
-  SET 
-  storeName = #{storeName}, storeNumber = #{storeNumber}, storeAddress = #{storeAddress}, email = #{email}, storePhone = #{storePhone}
-  where sno = #{sno}
-</update>
-
-<!-- StoreMapper id = "deleteStore" -->
-<delete id="deleteStore" parameterType="long">
-  DELETE FROM 
-  tbl_store
-  WHERE sno = #{sno}
-</delete>
-
-<!-- StoreMapper id = "listStore" -->
-<select id="listStore" parameterType="com.project.fastpickup.admin.store.dto.StoreListDTO">
-  SELECT * FROM tbl_store
-  WHERE sno > 0
-   <if test="keyword != null and types != null">
-      <trim prefix="AND (" prefixOverrides="or" suffix=")">
-      <foreach collection="types" item="type" separator=" OR ">
-        <if test='type == "s"'>
-          storeName like concat('%', #{keyword}, '%')
-        </if>
-        <if test='type == "e"'>
-          email like concat('%', #{keyword}, '%')
-        </if>
-      </foreach>
-    </trim>
-  </if>
-  ORDER BY sno DESC 
-  LIMIT #{skip}, #{size}
+<!-- StoreMapper id = "listStoreForCategory" -->
+<select id="listStoreForCategory"  parameterType="com.project.fastpickup.admin.util.PageRequestDTO">
+  SELECT 
+  c.cno,
+  c.pno,
+  p.sno,
+  c.categoryName,
+  concat(pi.uuid, '_', pi.fileName)   AS fileName
+  FROM tbl_product_category c
+  LEFT OUTER JOIN tbl_product             p on c.pno = p.pno 
+  LEFT OUTER JOIN tbl_product_image       pi on pi.pno = p.pno
+  WHERE c.categoryName  = #{categoryName} 
+  AND   pi.ord = 0
+  ORDER BY p.sno DESC , c.cno DESC, p.sno DESC 
+  LIMIT #{pr.skip}, #{pr.size}
 </select>
+
 
 <!-- StoreMapper id = "total" -->
 <select id="total" resultType="int">
@@ -74,64 +47,10 @@ WHERE s.sno = #{sno};
     SELECT * FROM 
     tbl_store
     WHERE sno > 0
-    <if test="keyword != null and types != null">
-      <trim prefix="AND (" prefixOverrides="or" suffix=")">
-      <foreach collection="types" item="type" separator=" OR ">
-        <if test='type == "s"'>
-          storeName like concat('%', #{keyword}, '%')
-        </if>
-        <if test='type == "e"'>
-          email like concat('%', #{keyword}, '%')
-        </if>
-      </foreach>
-    </trim>
-  </if>
   LIMIT #{countEnd}
   ) as tbl_store
 </select>
 
-<!-- StoreMapper id = "totalForStore" -->
-<select id="totalForStore" resultType="int">
-  SELECT COUNT(*)
-  FROM (
-    SELECT * FROM 
-    tbl_store
-    WHERE sno = #{sno}
-    <if test="pr.keyword != null and pr.types != null">
-      <trim prefix="AND (" prefixOverrides="or" suffix=")">
-      <foreach collection="pr.types" item="type" separator=" OR ">
-        <if test='type == "s"'>
-          storeName like concat('%', #{pr.keyword}, '%')
-        </if>
-        <if test='type == "e"'>
-          email like concat('%', #{pr.keyword}, '%')
-        </if>
-      </foreach>
-    </trim>
-  </if>
-  LIMIT #{pr.countEnd}
-  ) as tbl_store
-</select>
-
-<!-- StoreMapper id = "listForStore" -->
-<select id="listForStore" parameterType="com.project.fastpickup.admin.store.dto.StoreListDTO">
-  SELECT * FROM tbl_store
-  WHERE sno = #{sno}
-   <if test="pr.keyword != null and pr.types != null">
-      <trim prefix="AND (" prefixOverrides="or" suffix=")">
-      <foreach collection="pr.types" item="type" separator=" OR ">
-        <if test='type == "s"'>
-          storeName like concat('%', #{pr.keyword}, '%')
-        </if>
-        <if test='type == "e"'>
-          email like concat('%', #{pr.keyword}, '%')
-        </if>
-      </foreach>
-    </trim>
-  </if>
-  ORDER BY sno DESC 
-  LIMIT #{pr.skip}, #{pr.size}
-</select>
 
 <!-- StoreMapper id = "duplicateSno" -->
 <select id="duplicateSno" parameterType="long">
@@ -140,53 +59,5 @@ WHERE s.sno = #{sno};
   WHERE sno = #{sno}
 </select>
 
-<!-- 일별 과 월별 세일즈 통계를 위한 ResultMap 사용 -->
-<!-- StoreMapper id = "salesDate" -->
-<select id="salesDate" parameterType="long" resultMap="salesByDateResult">
-SELECT 
-  DATE(o.registDate) AS registDate, 
-  p.productName,
-  SUM(p.productPrice * o.orderCount) as totalSales
-FROM 
-  tbl_order AS o
-INNER JOIN 
-  tbl_product AS p ON p.pno = o.pno
-INNER JOIN 
-  tbl_store AS s ON s.sno = o.sno 
-WHERE s.sno = #{sno}
-GROUP BY 
-  DATE(o.registDate), p.productName
-ORDER BY 
-  DATE(o.registDate), p.productName
-</select>
-<resultMap id="salesByDateResult" type="com.project.fastpickup.admin.store.dto.StoreSalesDTO">
-    <result column="registDate" property="registDate"/>
-    <result column="totalSales" property="totalSales"/>
-    <result column="productName" property="productName"/>
-</resultMap>
-
-<select id="salesMonth" parameterType="long" resultMap="salesByMonthResult">
-SELECT 
-  DATE_FORMAT(o.registDate, '%Y-%m') AS registMonth,
-  p.productName,
-  SUM(p.productPrice * o.orderCount) as totalSales
-FROM 
-  tbl_order AS o
-INNER JOIN 
-  tbl_product AS p ON p.pno = o.pno
-INNER JOIN 
-  tbl_store AS s ON s.sno = o.sno 
-WHERE s.sno = #{sno}
-GROUP BY 
-  registMonth, p.productName
-ORDER BY 
-  registMonth, p.productName;
-</select>
-<resultMap id="salesByMonthResult" type="com.project.fastpickup.admin.store.dto.StoreSalesDTO">
-    <result column="registMonth" property="registMonth"/>
-    <result column="totalSales" property="totalSales"/>
-    <result column="productName" property="productName"/>
-</resultMap>
-<!-- 일별 과 월별 세일즈 통계를 위한 ResultMap 사용 -->
 
 </mapper>
