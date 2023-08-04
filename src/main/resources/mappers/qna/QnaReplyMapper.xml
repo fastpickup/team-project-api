@@ -6,12 +6,12 @@
 <!-- QnaMapper Xml -->
 <mapper namespace="com.project.fastpickup.admin.qna.mappers.QnaReplyMapper">
 
-    <!--  create  -->
-    <insert id="createQnaReply" parameterType="com.project.fastpickup.admin.qna.dto.reply.QnaReplyRegistDTO">
-        insert into tbl_qna_reply
-        (qno, reply, email)
-        values (#{qno}, #{reply}, #{email})
-    </insert>
+<!--    &lt;!&ndash;  create  &ndash;&gt;-->
+<!--    <insert id="createQnaReply" parameterType="com.project.fastpickup.admin.qna.dto.reply.QnaReplyRegistDTO">-->
+<!--        insert into tbl_qna_reply-->
+<!--        (qno, reply, email)-->
+<!--        values (#{qno}, #{reply}, #{email})-->
+<!--    </insert>-->
 
     <!--  read  -->
     <select id="readQnaReply" parameterType="com.project.fastpickup.admin.qna.dto.reply.QnaReplyReadDTO">
@@ -20,30 +20,30 @@
         where qno = #{qno}
     </select>
 
-    <!--  update read  -->
-    <select id="readQnaReplyRno" parameterType="com.project.fastpickup.admin.qna.dto.reply.QnaReplyReadDTO">
-        select qno, rno, email, reply, replyDate
-        from tbl_qna_reply
-        where rno = #{rno}
-    </select>
+<!--    &lt;!&ndash;  update read  &ndash;&gt;-->
+<!--    <select id="readQnaReplyRno" parameterType="com.project.fastpickup.admin.qna.dto.reply.QnaReplyReadDTO">-->
+<!--        select qno, rno, email, reply, replyDate-->
+<!--        from tbl_qna_reply-->
+<!--        where rno = #{rno}-->
+<!--    </select>-->
 
-    <!--  update  -->
-    <update id="updateQnaReply" parameterType="com.project.fastpickup.admin.qna.dto.reply.QnaReplyUpdateDTO">
-        update tbl_qna_reply
-        set rno = #{rno}, qno = #{qno}, reply = #{reply}
-        where rno = #{rno}
-    </update>
+<!--    &lt;!&ndash;  update  &ndash;&gt;-->
+<!--    <update id="updateQnaReply" parameterType="com.project.fastpickup.admin.qna.dto.reply.QnaReplyUpdateDTO">-->
+<!--        update tbl_qna_reply-->
+<!--        set rno = #{rno}, qno = #{qno}, reply = #{reply}-->
+<!--        where rno = #{rno}-->
+<!--    </update>-->
 
-    <!--  delete  -->
-    <delete id="deleteQnaReply" parameterType="long">
-        delete from tbl_qna_reply
-        where rno = #{rno}
-    </delete>
+<!--    &lt;!&ndash;  delete  &ndash;&gt;-->
+<!--    <delete id="deleteQnaReply" parameterType="long">-->
+<!--        delete from tbl_qna_reply-->
+<!--        where rno = #{rno}-->
+<!--    </delete>-->
 
-    <!-- reply count   -->
-    <select id="replyCount">
-        select count(rno) from tbl_qna_reply
-        where qno = #{qno}
-    </select>
+<!--    &lt;!&ndash; reply count   &ndash;&gt;-->
+<!--    <select id="replyCount">-->
+<!--        select count(rno) from tbl_qna_reply-->
+<!--        where qno = #{qno}-->
+<!--    </select>-->
 
 </mapper>

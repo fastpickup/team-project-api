@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan(basePackages = "com.project.fastpickup.**.mappers")
 public class FastpickupApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FastpickupApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(FastpickupApplication.class, args);
+    }
 }

@@ -79,60 +79,60 @@ public class QnaReplyMapperTests {
         log.info("=== End Read Qna Test Mapper ===");
     }
 
-    // readQnaReplyRno test
-    @Test
-    @Transactional
-    @DisplayName("문의 답글 수정시 조회")
-    public void readQnaReplyRnoTestMapper() {
-        // GIVEN
-        log.info("=== Start Read Qna Test Mapper ===");
-        // WHEN
-        QnaReplyReadDTO readQnaReplyrno = qnaReplyMapper.readQnaReplyRno(49L);
-        // THEN
-        Assertions.assertNotNull(readQnaReplyrno, "Qna Reply Read is Null");
-        log.info("=== End Read Qna Test Mapper ===");
-    }
-
-    // updateQnaReply test
-    @Test
-    @Transactional
-    @DisplayName("문의 답글 수정")
-    public void updateQnaTestMapper() {
-        // GIVEN
-        log.info("=== Start Update Qna Reply Test Mapper ===");
-        // WHEN
-        int result = qnaReplyMapper.updateQnaReply(qnaReplyUpdateDTO);
-        // THEN
-        Assertions.assertEquals(result, 1);
-        log.info("=== End Update Qna Reply Test Mapper ===");
-    }
-
-    // deleteQnaReply test
-    @Test
-    @Transactional
-    @DisplayName("문의 답글 삭제")
-    public void deleteQnaReplyTestMapper() {
-        // GIVEN
-        log.info("=== Start Delete Qna Reply Test Mapper ===");
-        // WHEN
-        int result = qnaReplyMapper.deleteQnaReply(49L);
-        // THEN
-        //Assertions.assertEquals(result, 1);
-        log.info("=== End Delete Qna Reply Test Mapper ===");
-    }
-
-    // reply count
-    @Test
-    @Transactional
-    @DisplayName("댓글 개수 파악")
-    public void replyCountMapperTest(){
-        // GIVEN
-        log.info("=== Start Count Qna Reply Test Mapper ===");
-        // WHEN
-        int count = qnaReplyMapper.replyCount(23L);
-        // THEN
-        log.info("count : " + count);
-        log.info("=== End Count Qna Reply Test Mapper ===");
-    }
+//     // readQnaReplyRno test
+//    @Test
+//    @Transactional
+//    @DisplayName("문의 답글 수정시 조회")
+//    public void readQnaReplyRnoTestMapper() {
+//        // GIVEN
+//        log.info("=== Start Read Qna Test Mapper ===");
+//        // WHEN
+//        QnaReplyReadDTO readQnaReplyrno = qnaReplyMapper.readQnaReplyRno(49L);
+//        // THEN
+//        Assertions.assertNotNull(readQnaReplyrno, "Qna Reply Read is Null");
+//        log.info("=== End Read Qna Test Mapper ===");
+//    }
+//
+//    // updateQnaReply test
+//    @Test
+//    @Transactional
+//    @DisplayName("문의 답글 수정")
+//    public void updateQnaTestMapper() {
+//        // GIVEN
+//        log.info("=== Start Update Qna Reply Test Mapper ===");
+//        // WHEN
+//        int result = qnaReplyMapper.updateQnaReply(qnaReplyUpdateDTO);
+//        // THEN
+//        Assertions.assertEquals(result, 1);
+//        log.info("=== End Update Qna Reply Test Mapper ===");
+//    }
+//
+//    // deleteQnaReply test
+//    @Test
+//    @Transactional
+//    @DisplayName("문의 답글 삭제")
+//    public void deleteQnaReplyTestMapper() {
+//        // GIVEN
+//        log.info("=== Start Delete Qna Reply Test Mapper ===");
+//        // WHEN
+//        int result = qnaReplyMapper.deleteQnaReply(49L);
+//        // THEN
+//        //Assertions.assertEquals(result, 1);
+//        log.info("=== End Delete Qna Reply Test Mapper ===");
+//    }
+//
+//    // reply count
+//    @Test
+//    @Transactional
+//    @DisplayName("댓글 개수 파악")
+//    public void replyCountMapperTest(){
+//        // GIVEN
+//        log.info("=== Start Count Qna Reply Test Mapper ===");
+//        // WHEN
+//        int count = qnaReplyMapper.replyCount(23L);
+//        // THEN
+//        log.info("count : " + count);
+//        log.info("=== End Count Qna Reply Test Mapper ===");
+//    }
 
 }
