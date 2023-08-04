@@ -10,6 +10,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
+import java.util.stream.IntStream;
 
 @Data
 public class PageResponseDTO<E> {
@@ -24,6 +25,7 @@ public class PageResponseDTO<E> {
   private boolean prevBtn;  //이전 버튼 유무
   private boolean nextBtn;  //다음 버튼 유무
   private boolean replyLast;//댓글 마지막 페이징 유무
+  private List<Integer> pageNums;//페이징 넘버
 
   @Builder(builderMethodName = "withAll")
   public PageResponseDTO(
@@ -47,6 +49,8 @@ public class PageResponseDTO<E> {
     this.prevBtn = this.startNum > 1;
     //total이 끝 페이지 번호와 size를 곱한 값보다 크면 다음버튼
     this.nextBtn = total > this.endNum * this.size;
+
+    this.pageNums = IntStream.rangeClosed(startNum, endNum).boxed().toList();
   }
 
 }
