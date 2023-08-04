@@ -1,7 +1,7 @@
 package com.project.fastpickup.member.service;
 
 /*
- * Date   : 2023.07.26
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */
@@ -17,8 +17,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.project.fastpickup.admin.member.dto.MemberConvertDTO;
 import com.project.fastpickup.admin.member.service.MemberService;
-import com.project.fastpickup.admin.util.PageRequestDTO;
-import com.project.fastpickup.admin.util.PageResponseDTO;
 
 import lombok.extern.log4j.Log4j2;
 
@@ -87,22 +85,6 @@ public class MemberServiceTests {
                 .build();
     }
 
-    // List Member Test Service 
-    @Test
-    @Transactional
-    @DisplayName("멤버 리스트 테스트")
-    public void listMemberTestService() {
-        // GIVEN 
-        log.info("=== Start List Member Test Service ===");
-        // WHEN 
-        PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
-        PageResponseDTO<MemberConvertDTO> listMember = memberService.listMember(pageRequestDTO);
-        // THEN
-        log.info(listMember.getList());
-        Assertions.assertNotNull(listMember, "listMember Should Be Not Null");
-        log.info("=== End List Member Test Service ===");
-    }
-
     // Join Member Test Service     
     @Test
     @Transactional
@@ -133,37 +115,6 @@ public class MemberServiceTests {
         Assertions.assertEquals(updateMemberConvertDTO.getMemberName(), "권성준");
         Assertions.assertEquals(updateMemberConvertDTO.getMemberPhone(), "010-3099-0648");
         log.info("=== End Update Member Test Service ===");
-    }
-
-    // Join Store Member Test Service
-    @Test
-    @Transactional
-    @DisplayName("가맹정 회원가입 테스트")
-    public void joinStoreMemberTestService() {
-        // GIVEN 
-        log.info("=== Start Join Store Member Test Service ===");
-        // WHEN 
-        memberService.joinStoreMember(joinStoreMemberDTO);
-        // THEN 
-        Assertions.assertEquals(joinStoreMemberDTO.getEmail(), "wfewfiewfewe@naver.com");
-        log.info("=== End Join Store Member Test Service ===");
-    }
-
-    // Update Store Member Test Service
-    @Test
-    @Transactional
-    @DisplayName("가맹점 업데이트 테스트")
-    public void updateStoreMemberTestSerivce() {
-        // GIVEN 
-        log.info("=== Start Update Store Member Test Service ===");
-        // WHEN 
-        memberService.updateMember(updateStoreMeberDTO);
-        // THEN 
-        MemberConvertDTO updatedStore = memberService.readMember(TEST_EMAIL_VERSION_3);
-        Assertions.assertNotNull(updatedStore, "updatedStore Should Not Be Null");
-        Assertions.assertEquals(updateStoreMeberDTO.getEmail(), "wfewfewfew@naver.com");
-        Assertions.assertEquals(updateMemberConvertDTO.getMemberPhone(), "010-3099-0648");
-        log.info("=== End Update Store Member Test Serivce ===");
     }
 
     // Read Store & Member Test Service

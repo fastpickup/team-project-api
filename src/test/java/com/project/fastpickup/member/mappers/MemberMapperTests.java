@@ -1,12 +1,11 @@
 package com.project.fastpickup.member.mappers;
 
 /*
- * Date   : 2023.07.26
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */
 
-import java.util.List;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,8 +19,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.project.fastpickup.admin.member.dto.MemberConvertDTO;
 import com.project.fastpickup.admin.member.mappers.MemberMapper;
-import com.project.fastpickup.admin.util.PageRequestDTO;
-
 import lombok.extern.log4j.Log4j2;
 
 // Member Mapper Test Class
@@ -91,38 +88,6 @@ public class MemberMapperTests {
         
     }
 
-    // join Member Store Mapper Test
-    @Test
-    @Transactional
-    @DisplayName("가맹점 회원가입 테스트")
-    public void joinStoreMeberTestMapper() {
-        // GIVEN
-        log.info("=== Start Join Store Test Mapper ===");
-        // WHEN
-        String rolename = "USER";
-        memberMapper.joinStoreMember(joinStoreMemberDTO);
-        memberMapper.createJoinMemberRole(joinStoreMemberDTO.getEmail(), rolename);
-        // THEN 
-        Assertions.assertEquals(joinStoreMemberDTO.getEmail(), "wfewfiewfewe@naver.com");
-        log.info("=== End Join Store Test Mapper ===");
-    }
-    
-    // update Member Store Mapper Test
-    @Test
-    @Transactional
-    @DisplayName("가맹점 업데이트 테스트")
-    public void updateStoreMemberTestMapper() {
-        // GIVEN
-        log.info("=== Start Update Store Test Mapper ===");
-        // WHEN 
-        memberMapper.updateMember(updateStoreMeberDTO);
-        // THEN 
-        MemberConvertDTO storeReadMember = memberMapper.readMember(TEST_EMAIL);
-        Assertions.assertNotNull(storeReadMember, "storeReadMeber Should Be Not Null");
-        Assertions.assertEquals(updateStoreMeberDTO.getEmail(), "wfewfewfew@naver.com");
-        log.info("=== End Update Store Test Mapper ===");
-    }
-
     // Join Member Mapper Test
     @Test
     @Transactional
@@ -183,36 +148,5 @@ public class MemberMapperTests {
         Assertions.assertEquals(updateMemberConvertDTO.getEmail(), "thistrik@naver.com");
         Assertions.assertEquals(updateMemberConvertDTO.getMemberName(), "권성준");
         log.info("=== End Update Member Test Mapper ===");
-    }
-
-    // List Member Mapper Test 
-    @Test
-    @Transactional
-    @DisplayName("멤버 리스트 테스트")
-    public void listMemberTestMapper() {
-        // GIVEN 
-        log.info("=== Start List Member Test Mapper ===");
-        // WHEN
-        PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
-        List<MemberConvertDTO> listMember = memberMapper.listMember(pageRequestDTO);
-        log.info(listMember);
-        Assertions.assertNotNull(listMember, "listMember Should Be Not Null");
-        log.info("=== End List Member Test Mapper ===");
-    }
-
-    // Total Member Mapper Test
-    @Test
-    @Transactional
-    @DisplayName("토탈 테스트")
-    public void totalMemberTestMapper() {
-        // GIVEN 
-        log.info("=== Start Total Member Test Mapper ===");
-        // WHEN 
-        PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
-        int totalCount = memberMapper.total(pageRequestDTO);
-        // THEN 
-        log.info(totalCount);
-        Assertions.assertNotNull(totalCount, "totalCount Should Be Not Null");
-        log.info("=== End Total Member Test Mapper ===");
     }
 }

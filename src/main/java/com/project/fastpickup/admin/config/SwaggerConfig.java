@@ -17,16 +17,16 @@ import org.springframework.context.annotation.Configuration;
 //http://localhost:8080/swagger-ui/index.html#/
 @Configuration
 @RequiredArgsConstructor
-@OpenAPIDefinition(info = @Info(title = "Joonny Swagger",version = "v1"))
+@OpenAPIDefinition(info = @Info(title = "Joonny Swagger", version = "v1"))
 public class SwaggerConfig {
 
   @Bean
   public GroupedOpenApi chatOpenApi() {
-    String[] paths = {"/**"};
+    String[] paths = { "/**" };
 
     return GroupedOpenApi.builder()
-      .group("Joon OPEN API v1")
-      .pathsToMatch(paths)
-      .build();
+        .group("Joon OPEN API v1")
+        .pathsToMatch(paths)
+        .build();
   }
 }

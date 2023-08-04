@@ -1,7 +1,7 @@
 package com.project.fastpickup.order.service;
 
 /*
- * Date   : 2023.07.28
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */
@@ -17,17 +17,13 @@ import org.springframework.transaction.annotation.Transactional;
 import com.project.fastpickup.admin.order.dto.OrderAndHistoryListDTO;
 import com.project.fastpickup.admin.order.dto.order.OrderCreateDTO;
 import com.project.fastpickup.admin.order.dto.order.OrderDTO;
-import com.project.fastpickup.admin.order.dto.order.OrderUpdateDTO;
 import com.project.fastpickup.admin.order.dto.orderhistory.OrderHistoryCreateDTO;
-import com.project.fastpickup.admin.order.dto.orderhistory.OrderHistoryDTO;
-import com.project.fastpickup.admin.order.dto.orderhistory.OrderHistoryUpdateDTO;
 import com.project.fastpickup.admin.order.service.OrderService;
 import com.project.fastpickup.admin.util.PageRequestDTO;
 import com.project.fastpickup.admin.util.PageResponseDTO;
 
 import lombok.extern.log4j.Log4j2;
 
-// Order Service Test Class
 @Log4j2
 @SpringBootTest
 public class OrderServiceTests {
@@ -59,9 +55,7 @@ public class OrderServiceTests {
 
     // DTO 정의
     private OrderCreateDTO orderCreateDTO;
-    private OrderUpdateDTO orderUpdateDTO;
     private OrderHistoryCreateDTO orderHistoryCreateDTO;
-    private OrderHistoryUpdateDTO orderHistoryUpdateDTO;
 
     @BeforeEach
     public void setUp() {
@@ -72,18 +66,8 @@ public class OrderServiceTests {
                 .pno(TEST_PNO)
                 .build();
 
-        orderUpdateDTO = OrderUpdateDTO.builder()
-                .ono(TEST_ONO)
-                .orderCount(TEST_ORDER_COUNT_VERSION_2)
-                .build();
-
         orderHistoryCreateDTO = OrderHistoryCreateDTO.builder()
                 .orderStatus(TEST_ORDER_STATUS_REJECT)
-                .build();
-
-        orderHistoryUpdateDTO = OrderHistoryUpdateDTO.builder()
-                .orderHistory(TEST_ORDER_HISTORY)
-                .orderStatus(TEST_ORDER_STATUS_COMPLETE)
                 .build();
     }
 
@@ -104,81 +88,34 @@ public class OrderServiceTests {
         log.info("=== End Create Order & History Service ===");
     }
 
-    // Update Order Count
+    // Read My Order History
     @Test
     @Transactional
-    @DisplayName("Service: 주문의 주문개수 업데이트 서비스")
-    public void updateOrderCount() {
-        // GIVEN
-        log.info("=== Start Update Order OrderCount Service ===");
-        // WHEN
-        Long createOrder = orderService.updateOrder(orderUpdateDTO);
-        // THEN
-        OrderDTO readUpdatedOrder = orderService.readOrder(TEST_ONO);
-        Assertions.assertNotNull(readUpdatedOrder, "readUpdatedOrder Should Be Not null");
-        Assertions.assertEquals(orderUpdateDTO.getOrderCount(), 7, "OrderCount Should Be 7");
-        log.info("=== End Update Order OrderCount Service ===");
-    }
-
-    // Read OrderHistory 
-    @Test
-    @Transactional
-    @DisplayName("Service: 주문 상태 상세조회")
-    public void readOrderHistory() {
-        // GIVEN
-        log.info("=== Start Read Order History ===");
+    @DisplayName("Service: 주문 이력 상세조회")
+    public void readMyOrderHistory() {
+        // GIVEN 
+        log.info("=== Start Read My Order History ===");
         // WHEN 
-        OrderHistoryDTO readHistory = orderService.readHistory(TEST_ONO);
+        OrderDTO readMyOrderHistory = orderService.readMyOrderHistory(TEST_ONO);
         // THEN 
-        log.info(readHistory);
-        Assertions.assertNotNull(readHistory, "readHistory Should Be Not null");
-        log.info("=== End Read Order History ===");
+        log.info(readMyOrderHistory);
+        Assertions.assertNotNull(readMyOrderHistory, "readMyOrderHistory Should Be Not Null");
+        log.info("=== End Read My Order History ===");
     }
 
-    // Update OrderHistory Status
+    // List My Order History
     @Test
     @Transactional
-    @DisplayName("Service: 주문 이력의 상태 업데이트")
-    public void updateHistoryStatus() {
-        // GIVEN
-        log.info("=== Start Update History Status Service ===");
-        // WHEN
-        orderService.updateHistory(orderHistoryUpdateDTO);
-        // THEN
-        OrderHistoryDTO updatedHistory = orderService.readHistory(TEST_ONO);
-        Assertions.assertNotNull(updatedHistory, "updatedHistory Should Be Not Null");
-        Assertions.assertEquals(orderHistoryUpdateDTO.getOrderStatus(), "완료");
-        log.info("=== End Update History Status Service ===");
-    }
-
-    // Read Order And OrderHistory And Product And Product Image And Store
-    @Test
-    @Transactional
-    @DisplayName("Service: 주문, 주문이력, 상품, 상품이미지, 가맹점 정보 상세조회")
-    public void readOrderProductOrderHistoryProductImageStore() {
-        // GIVEN
-        log.info("=== Start Read Order & Order History & Product & Product Image & Store Service ===");
-        // WHEN
-        OrderDTO readEveryThing = orderService.readOrder(TEST_ONO);
-        // THEN
-        log.info(readEveryThing);
-        Assertions.assertNotNull(readEveryThing, "readEveryThing Should Be Not null");
-        log.info("=== End Read Order & Order History & Product & Product Image & Store Service ===");
-    }
-
-    // List Order And OrderHistory And Product And Product Image And Store
-    @Test
-    @Transactional
-    @DisplayName("Service: 주문, 주문이력, 상품, 상품이미지, 가맹점 정보 리스트")
-    public void listOrderProductOrderHistoryProductImageStore() {
-        // GIVEN
-        log.info("=== Strat List Order & Order History & Product & Product Image & Store ===");
-        // WHEN
+    @DisplayName("Service: 주문 이력 리스트")
+    public void listMyOrderHistory() {
+        // GIVEN 
+        log.info("=== Start List My Order History ===");
+        // WHEN 
         PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
-        PageResponseDTO<OrderAndHistoryListDTO> listEveryThing = orderService.listOrderAndHistory(pageRequestDTO);
-        // THEN
-        log.info(listEveryThing.getList());
-        Assertions.assertNotNull(listEveryThing, "listEveryThing Should Be Not Null");
-        log.info("=== End List Order & Order History & Product & Product Image & Store ===");
+        PageResponseDTO<OrderAndHistoryListDTO> list = orderService.listMyOrderHistory(TEST_EMAIL, pageRequestDTO);
+        // THEN 
+        log.info(list.getList());
+        Assertions.assertNotNull(list.getList(), "list.getList() Should Be Not Null");
+        log.info("=== End List My Order History ===");
     }
 }

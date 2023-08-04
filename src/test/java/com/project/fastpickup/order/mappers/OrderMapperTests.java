@@ -1,7 +1,7 @@
 package com.project.fastpickup.order.mappers;
 
 /*
- * Date   : 2023.07.28
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */
@@ -19,17 +19,13 @@ import org.springframework.transaction.annotation.Transactional;
 import com.project.fastpickup.admin.order.dto.OrderAndHistoryListDTO;
 import com.project.fastpickup.admin.order.dto.order.OrderCreateDTO;
 import com.project.fastpickup.admin.order.dto.order.OrderDTO;
-import com.project.fastpickup.admin.order.dto.order.OrderUpdateDTO;
 import com.project.fastpickup.admin.order.dto.orderhistory.OrderHistoryCreateDTO;
-import com.project.fastpickup.admin.order.dto.orderhistory.OrderHistoryDTO;
-import com.project.fastpickup.admin.order.dto.orderhistory.OrderHistoryUpdateDTO;
 import com.project.fastpickup.admin.order.mappers.OrderHistoryMapper;
 import com.project.fastpickup.admin.order.mappers.OrderMapper;
 import com.project.fastpickup.admin.util.PageRequestDTO;
 
 import lombok.extern.log4j.Log4j2;
 
-// Order Mapper Test Class
 @Log4j2
 @SpringBootTest
 public class OrderMapperTests {
@@ -67,10 +63,7 @@ public class OrderMapperTests {
     private OrderCreateDTO orderCreateDTO;
 
     private OrderCreateDTO orderMemberCreateOrderDTO;
-
-    private OrderUpdateDTO orderUpdateDTO;
     private OrderHistoryCreateDTO orderHistoryCreateDTO;
-    private OrderHistoryUpdateDTO orderHistoryUpdateDTO;
 
     @BeforeEach
     public void setUp() {
@@ -89,63 +82,32 @@ public class OrderMapperTests {
                 .pno(TEST_PNO)
                 .build();
 
-        orderUpdateDTO = OrderUpdateDTO.builder()
-                .ono(TEST_ONO)
-                .orderCount(TEST_ORDER_COUNT_VERSION_2)
-                .build();
-
         orderHistoryCreateDTO = OrderHistoryCreateDTO.builder()
                 .orderStatus(TEST_ORDER_STATUS_REJECT)
                 .build();
-
-        orderHistoryUpdateDTO = OrderHistoryUpdateDTO.builder()
-                .orderHistory(TEST_ORDER_HISTORY)
-                .orderStatus(TEST_ORDER_STATUS_COMPLETE)
-                .build();
     }
 
-    // Update Order Count
     @Test
     @Transactional
-    @DisplayName("주문의 주문개수 업데이트")
-    public void updateOrderCount() {
-        // GIVEN
-        log.info("=== Start Update Order OrderCount Mapper ===");
-        // WHEN
-        orderMapper.updateOrder(orderUpdateDTO);
-        // THEN
-        OrderDTO readUpdatedOrder = orderMapper.readOrder(TEST_ONO);
-        Assertions.assertNotNull(readUpdatedOrder, "readUpatedOrder Should Be Not Null");
-        Assertions.assertEquals(orderUpdateDTO.getOrderCount(), 7, "OrderCount Should Be 7");
-        log.info("=== End Update Order OrderCount Mapper ===");
+    @DisplayName("Mapper: 내 주문 이력 리스트")
+    public void listOrderMyHistory() {
+        log.info("=== Start List Order My History ===");
+        PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
+        List<OrderAndHistoryListDTO> list = orderMapper.listOrderMyHistory(TEST_EMAIL, pageRequestDTO);
+        log.info(list);
+        Assertions.assertNotNull(list, "list Should Not Be Null");
+        log.info("=== Start List Order My History ===");
     }
 
-    // Update OrderHistory Status
     @Test
     @Transactional
-    @DisplayName("주문 이력의 상태 업데이트")
-    public void updateHistoryStatus() {
-        // GVIEN
-        log.info("=== Start Update History Status Mapper===");
-        // WHEN
-        orderHistoryMapper.updateHistory(orderHistoryUpdateDTO);
-        // THEN
-        OrderHistoryDTO updatedOrderStatus = orderHistoryMapper.readHistory(TEST_ONO);
-        Assertions.assertNotNull(updatedOrderStatus, "updatedOrderStatus Should Be Not Null");
-        Assertions.assertEquals(orderHistoryUpdateDTO.getOrderStatus(), "완료");
-        log.info("=== End Update History Status Mapper ===");
-    }
-
-    // Read Order And OrderHistory And Product And Product Image And Store
-    @Test
-    @Transactional
-    @DisplayName("주문, 주문이력, 상품, 상품이미지, 가맹점 정보 상세조회")
-    public void readOrderProductOrderHistoryProductImageStore() {
-        log.info("=== Start Read Order & Order History & Product & Product Image & Store Mapper ===");
-        OrderDTO readEveryThing = orderMapper.readOrder(TEST_ONO);
-        log.info(readEveryThing);
-        Assertions.assertNotNull(readEveryThing, "readEveryThing Should Be Not Null");
-        log.info("=== End Read Order & Order History & Product & Product Image & Store Mapper ===");
+    @DisplayName("Mapper: 내 주문 상세 이력")
+    public void readOrderMyHistory() {
+        log.info("=== Start Read My Order History ===");
+        OrderDTO readMyOrderHistory = orderMapper.readOrderMyHistory(TEST_ONO);
+        log.info(readMyOrderHistory);
+        Assertions.assertNotNull(readMyOrderHistory, "readMyOrderHistory Should Be Not Null");
+        log.info("=== End Read My Order History ===");
     }
 
     // Create Order And OrderHistory
@@ -166,36 +128,5 @@ public class OrderMapperTests {
         Assertions.assertEquals(TEST_SNO, 1L);
         Assertions.assertEquals(TEST_PNO, 22L);
         log.info("=== End Create Order & History Mapper ===");
-    }
-
-    // Create Order And Order History
-    @Test
-    @Transactional
-    @DisplayName("주문과 주문이력 다른 멤버 생성 테스트")
-    public void createOrderAndOrderHistoryOtherMember() {
-        log.info("=== Start Create Order & History Other Mapper ===");
-        Long createOrder = orderMapper.createOrder(orderMemberCreateOrderDTO);
-
-        Long ono = orderMemberCreateOrderDTO.getOno();
-        orderHistoryCreateDTO.setOno(ono);
-        Long createOrderHistory = orderHistoryMapper.createHistory(orderHistoryCreateDTO);
-
-        log.info("=== End Create Order & History Other Mapper ===");
-    }
-
-    // List Order And Order History And Product And Product Image
-    @Test
-    @Transactional
-    @DisplayName("주문, 주문이력, 상품, 상품이미지 리스트")
-    public void listOrderAndOrderHistoryProductProductImage() {
-        // GIVEN
-        log.info("=== Start List Order & Order History & Product & Product Image Mapper ===");
-        // WHEN
-        PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
-        List<OrderAndHistoryListDTO> listEveryThing = orderMapper.listOrderAndHistory(pageRequestDTO);
-        // THEN
-        log.info(listEveryThing);
-        Assertions.assertNotNull(listEveryThing, "listEveryThing Should Be Not Null");
-        log.info("=== End List Order & Order History & Product & Product Image Mapper ===");
     }
 }

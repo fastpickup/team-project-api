@@ -1,12 +1,11 @@
 package com.project.fastpickup.admin.member.service.impl;
 
 /*
- * Date   : 2023.07.26
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */
 
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,8 +20,6 @@ import com.project.fastpickup.admin.member.exception.UserEmailAlreadyExistsExcep
 import com.project.fastpickup.admin.member.exception.UserNotFoundException;
 import com.project.fastpickup.admin.member.mappers.MemberMapper;
 import com.project.fastpickup.admin.member.service.MemberService;
-import com.project.fastpickup.admin.util.PageRequestDTO;
-import com.project.fastpickup.admin.util.PageResponseDTO;
 
 import lombok.extern.log4j.Log4j2;
 
@@ -62,25 +59,6 @@ public class MemberServiceImpl implements MemberService {
         return memberMapper.joinMember(memberConvertDTO);
     }
 
-    // Join Store Meber ServiceImpl
-    @Override
-    @Transactional
-    public int joinStoreMember(MemberConvertDTO memberConvertDTO) {
-        log.info("Is Running JoinStoreMember ServiceImpl");
-        // Check email format
-        String email = memberConvertDTO.getEmail();
-        Pattern pattern = Pattern.compile("^[A-Za-z0-9+_.-]+@(.+)$");
-        Matcher matcher = pattern.matcher(email);
-        if (!matcher.matches()) {
-            throw new InvalidEmailException("이메일 형식이 올바르지 않습니다: " + email);
-        }
-        String rolename = "STORE";
-        String encodedPassword = passwordEncoder.encode(memberConvertDTO.getMemberPw());
-        memberConvertDTO.setMemberPw(encodedPassword);
-        memberMapper.createJoinMemberRole(memberConvertDTO.getEmail(), rolename);
-        return memberMapper.joinStoreMember(memberConvertDTO);
-    }
-
     // Delete Member ServiceImpl
     @Override
     @Transactional
@@ -104,20 +82,6 @@ public class MemberServiceImpl implements MemberService {
     public MemberConvertDTO readMember(String email) {
         log.info("Is Running ReadMember ServiceImpl");
         return memberMapper.readMember(email);
-    }
-
-    // List Meber ServiceImpl
-    @Override
-    @Transactional(readOnly = true)
-    public PageResponseDTO<MemberConvertDTO> listMember(PageRequestDTO pageRequestDTO) {
-        log.info("Is Running ListMember ServiceImpl");
-        List<MemberConvertDTO> list = memberMapper.listMember(pageRequestDTO);
-        int total = memberMapper.total(pageRequestDTO);
-        return PageResponseDTO.<MemberConvertDTO>withAll()
-                .list(list)
-                .total(total)
-                .pageRequestDTO(pageRequestDTO)
-                .build();
     }
 
     // Check Email Already Exists ServiceImpl

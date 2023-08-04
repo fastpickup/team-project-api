@@ -1,7 +1,7 @@
 package com.project.fastpickup.store.mappers;
 
 /*
- * Date   : 2023.07.27
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */
@@ -9,18 +9,14 @@ package com.project.fastpickup.store.mappers;
 import java.util.List;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.project.fastpickup.admin.store.dto.StoreCreateDTO;
 import com.project.fastpickup.admin.store.dto.StoreDTO;
-import com.project.fastpickup.admin.store.dto.StoreListDTO;
-import com.project.fastpickup.admin.store.dto.StoreSalesDTO;
-import com.project.fastpickup.admin.store.dto.StoreUpdateDTO;
+import com.project.fastpickup.admin.store.dto.StoreDTOForMember;
 import com.project.fastpickup.admin.store.mappers.StoreMapper;
 import com.project.fastpickup.admin.util.PageRequestDTO;
 
@@ -42,48 +38,7 @@ public class StoreMapperTests {
     private static final String TEST_EMAIL = "thistrik@naver.com";
     private static final String TEST_STORE_PHONE = "12321-23423-523532";
     private static final Long TEST_SNO = 1L;
-
-    // DTO 정의
-    private StoreDTO storeDTO;
-    private StoreUpdateDTO storeUpdateDTO;
-    private StoreCreateDTO storeCreateDTO;
-
-    // @BeforeEach 사용을 위한 셋팅
-    @BeforeEach
-    public void setUp() {
-        storeCreateDTO = StoreCreateDTO.builder()
-                .storeName(TEST_STORE_NAME)
-                .storeNumber(TEST_STORE_NUMBER)
-                .storeAddress(TEST_STORE_ADDRESS)
-                .email(TEST_EMAIL)
-                .storePhone(TEST_STORE_PHONE)
-                .build();
-
-        storeUpdateDTO = StoreUpdateDTO.builder()
-                .sno(TEST_SNO)
-                .storeName(TEST_STORE_NAME)
-                .storeNumber(TEST_STORE_NUMBER)
-                .storeAddress(TEST_STORE_ADDRESS)
-                .email(TEST_EMAIL)
-                .storePhone(TEST_STORE_PHONE)
-                .build();
-    }
-
-    // Create Store Mapper Test
-    @Test
-    @Transactional
-    @DisplayName("가맹정 정보 생성 테스트")
-    public void createStoreMapperTest() {
-        // GIVEN
-        log.info("=== Start Create Store Mapper Test ===");
-        // WHEN
-        storeMapper.createStore(storeCreateDTO);
-        // THEN
-        Assertions.assertEquals(TEST_EMAIL, "thistrik@naver.com");
-        Assertions.assertEquals(TEST_STORE_NAME, "교촌치킨");
-        Assertions.assertEquals(TEST_STORE_NUMBER, "12342-23423-2342");
-        log.info("=== End Create Store Mapper Test");
-    }
+    private static final String TEST_CATEGORY_NAME = "치킨";
 
     // Read Store Mapper Test
     @Test
@@ -97,54 +52,6 @@ public class StoreMapperTests {
         log.info("가맹점: " + readStore);
         Assertions.assertNotNull(readStore, "readStore Should Be Not Null");
         log.info("=== End Read Store Mapper Test ===");
-    }
-
-    // Delete Store Mapper Test
-    @Test
-    @Transactional
-    @DisplayName("가맹점 삭제 테스트")
-    public void deleteStoreMapperTest() {
-        // GIVEN
-        log.info("=== Start Delete Store Mapper Test ===");
-        // WHEN
-        storeMapper.deleteStore(TEST_SNO);
-        // THEN
-        StoreDTO readStore = storeMapper.readStore(TEST_SNO);
-        Assertions.assertNull(readStore, "readStore Should Be Null");
-        log.info("=== End Delete Store Mapper Test ===");
-    }
-
-    // Update Store Mapper Test
-    @Test
-    @Transactional
-    @DisplayName("가맹점 업데이트 테스트")
-    public void updateStoreMapperTest() {
-        // GIVEN
-        log.info("=== Start Update Store Mapper Test ===");
-        // WHEN
-        storeMapper.updateStore(storeUpdateDTO);
-        // THEN
-        StoreDTO updatedStore = storeMapper.readStore(TEST_SNO);
-        Assertions.assertNotNull(updatedStore, "updatedStore Should Be Not Null");
-        Assertions.assertEquals(storeUpdateDTO.getEmail(), "thistrik@naver.com");
-        Assertions.assertEquals(storeUpdateDTO.getStoreAddress(), "경기도 성남시");
-        Assertions.assertEquals(storeUpdateDTO.getStoreNumber(), "12342-23423-2342");
-        log.info("=== End Update Store Mapper Test ===");
-    }
-
-    // List Store Mapper Test
-    @Test
-    @Transactional
-    @DisplayName("가맹점 리스트 테스트")
-    public void listStoreMapperTest() {
-        // GIVEN
-        log.info("=== Start List Store Mapper Test ===");
-        // WHEN
-        PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
-        List<StoreListDTO> listStore = storeMapper.listStore(pageRequestDTO);
-        log.info(listStore);
-        Assertions.assertNotNull(listStore, "listStore Should Be Not Null");
-        log.info("=== End List Store Mapper Test ===");
     }
 
     // Total Store Mapper Test
@@ -163,28 +70,19 @@ public class StoreMapperTests {
         log.info("=== End Total Store Mapper Test ===");
     }
 
-    // Sales Month
+    // Read Store For Member
     @Test
     @Transactional
-    @DisplayName("가맹점 월별 매출")
-    public void salesMonthStoreMapperTest() {
-        log.info("=== Start Sales Month Mapper Test ===");
-        List<StoreSalesDTO> storeSalesDTO = storeMapper.salesMonth(TEST_SNO);
-        log.info(storeSalesDTO);
-        Assertions.assertNotNull(storeSalesDTO);
-        Assertions.assertNotNull(storeSalesDTO, "storeSalesDTO Should Be Not Null");
-        log.info("=== End Sales Month Mapper Test ===");
-    }
-
-    // Sales Day
-    @Test
-    @Transactional
-    @DisplayName("가맹점 일별 매출")
-    public void salesDayStoreMapperTest() {
-        log.info("=== Start Sales Day Mapper Test ===");
-        List<StoreSalesDTO> storeSalesDTO = storeMapper.salesDate(TEST_SNO);
-        log.info(storeSalesDTO);
-        Assertions.assertNotNull(storeSalesDTO, "storeSalesDTO Should Be Not Null");
-        log.info("=== End Sales Day Mapper Test ===");
+    @DisplayName("Mapper: 카테고리 가맹점 리스트")
+    public void readStoreForMember() {
+        // GIVEN
+        log.info("=== Start Read Store For Member ===");
+        // WHEN
+        PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
+        List<StoreDTOForMember> list = storeMapper.listStoreForCategory(TEST_CATEGORY_NAME, pageRequestDTO);
+        log.info(list);
+        // THEN
+        Assertions.assertNotNull(list, "list Should Be Not Nul");
+        log.info("=== End Read Store For Member ===");
     }
 }
