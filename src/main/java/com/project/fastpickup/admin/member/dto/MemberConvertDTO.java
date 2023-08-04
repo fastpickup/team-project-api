@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 /*
- * Date   : 2023.07.26
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */

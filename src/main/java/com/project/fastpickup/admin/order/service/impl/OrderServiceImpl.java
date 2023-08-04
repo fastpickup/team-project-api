@@ -1,7 +1,7 @@
 package com.project.fastpickup.admin.order.service.impl;
 
 /*
- * Date   : 2023.07.28
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */
@@ -15,10 +15,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.project.fastpickup.admin.order.dto.OrderAndHistoryListDTO;
 import com.project.fastpickup.admin.order.dto.order.OrderCreateDTO;
 import com.project.fastpickup.admin.order.dto.order.OrderDTO;
-import com.project.fastpickup.admin.order.dto.order.OrderUpdateDTO;
 import com.project.fastpickup.admin.order.dto.orderhistory.OrderHistoryCreateDTO;
 import com.project.fastpickup.admin.order.dto.orderhistory.OrderHistoryDTO;
-import com.project.fastpickup.admin.order.dto.orderhistory.OrderHistoryUpdateDTO;
 import com.project.fastpickup.admin.order.exception.OrderNotFoundException;
 import com.project.fastpickup.admin.order.mappers.OrderHistoryMapper;
 import com.project.fastpickup.admin.order.mappers.OrderMapper;
@@ -65,45 +63,6 @@ public class OrderServiceImpl implements OrderService {
         return orderMapper.readOrder(ono);
     }
 
-    // Update Order Count ServiceImpl
-    @Override
-    @Transactional
-    public Long updateOrder(OrderUpdateDTO orderUpdateDTO) {
-        log.info("Is Running Update Order ServiceImpl");
-        return orderMapper.updateOrder(orderUpdateDTO);
-    }
-
-    // Delete Order ServiceImpl
-    @Override
-    @Transactional
-    public int deleteOrder(Long ono) {
-        log.info("Is Running Delete Order ServiceImpl");
-        return orderMapper.deleteOrder(ono);
-    }
-
-    // List Order And OrderHistory And Product And ProductImage And Store
-    // ServiceImpl
-    @Override
-    @Transactional(readOnly = true)
-    public PageResponseDTO<OrderAndHistoryListDTO> listOrderAndHistory(PageRequestDTO pageRequestDTO) {
-        log.info("Is Running List Order And EveryThing ServiceImpl");
-        List<OrderAndHistoryListDTO> listEveryThing = orderMapper.listOrderAndHistory(pageRequestDTO);
-        int total = orderMapper.total(pageRequestDTO);
-        return PageResponseDTO.<OrderAndHistoryListDTO>withAll()
-                .list(listEveryThing)
-                .total(total)
-                .pageRequestDTO(pageRequestDTO)
-                .build();
-    }
-
-    // Update History Status ServiceImpl
-    @Override
-    @Transactional
-    public Long updateHistory(OrderHistoryUpdateDTO orderHistoryUpdateDTO) {
-        log.info("Is Running Update History Serviceimpl");
-        return orderHistoryMapper.updateHistory(orderHistoryUpdateDTO);
-    }
-
     // Read History ServiceImpl
     @Override
     @Transactional(readOnly = true)
@@ -122,17 +81,25 @@ public class OrderServiceImpl implements OrderService {
         }
     }
 
-    // List For Store Order And History
+    // List My Order History ServiceImpl
     @Override
-    @Transactional
-    public PageResponseDTO<OrderAndHistoryListDTO> listForStoreOrderAndHistory(PageRequestDTO pageRequestDTO, Long sno) {
-        log.info("Is Running List For Order And History ServiceImpl");
-        List<OrderAndHistoryListDTO> listEveryThing = orderMapper.listOrderForStoreAndHistory(pageRequestDTO, sno);
-        int total = orderMapper.totalForStore(pageRequestDTO, sno);
+    @Transactional(readOnly = true)
+    public PageResponseDTO<OrderAndHistoryListDTO> listMyOrderHistory(String email, PageRequestDTO pageRequestDTO) {
+        log.info("Is Running List My Order History ServiceImpl");
+        List<OrderAndHistoryListDTO> list = orderMapper.listOrderMyHistory(email, pageRequestDTO);
+        int total = orderMapper.total(pageRequestDTO);
         return PageResponseDTO.<OrderAndHistoryListDTO>withAll()
-                .list(listEveryThing)
+                .list(list)
                 .total(total)
                 .pageRequestDTO(pageRequestDTO)
                 .build();
+    }
+
+    // Read My Order History ServiceImpl
+    @Override
+    @Transactional(readOnly = true)
+    public OrderDTO readMyOrderHistory(Long ono) {
+        log.info("Is Running Read My Order History ServiceImpl");
+        return orderMapper.readOrderMyHistory(ono);
     }
 }

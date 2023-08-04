@@ -33,13 +33,6 @@
   VALUES(#{email}, #{memberPw}, #{memberName}, #{memberPhone})
 </insert>
 
-<!-- MemberMapper id = "joinStoreMember" -->
-<insert id="joinStoreMember" parameterType="com.project.fastpickup.admin.member.dto.MemberConvertDTO">
-  INSERT INTO tbl_member
-  (email,memberPw,memberName,memberPhone,store)
-  VALUES(#{email}, #{memberPw}, #{memberName}, #{memberPhone}, "s")
-</insert>
-
 <!-- MemberMapper id = "deleteMember" -->
 <delete id="deleteMember" parameterType="java.lang.String">
   DELETE FROM tbl_member
@@ -83,59 +76,6 @@
   <result property="joinDate" column="joinDate"/>
   <collection property="sno" ofType="long" resultMap="MemberSnoResultMap"/>
 </resultMap>
-
-<!-- MemberMapper id = "listMember" -->
-<select id="listMember" parameterType="com.project.fastpickup.admin.member.dto.MemberConvertDTO">
-  SELECT * FROM tbl_member
-  <if test="keyword != null and types != null">
-      <trim prefix="WHERE (" prefixOverrides="or" suffix=")">
-      <foreach collection="types" item="type" separator=" OR ">
-        <if test='type == "e"'>
-          email like concat('%', #{keyword}, '%')
-        </if>
-        <if test='type == "n"'>
-          memberName like concat('%', #{keyword}, '%')
-        </if>
-        <if test='type == "p"'>
-          memberPhone like concat('%', #{keyword}, '%')
-        </if>
-        <if test='type == "s"'>
-          store like concat('%', #{keyword}, '%')
-        </if>
-      </foreach>
-    </trim>
-  </if>
-  ORDER BY joinDate DESC
-  LIMIT #{skip}, #{size}
-</select>
-
-<!-- MemberMapper id = "total" -->
-<select id="total" resultType="int">
-  SELECT COUNT(*)
-  FROM (
-    SELECT * 
-    FROM tbl_member
-    <if test="keyword != null and types != null">
-      <trim prefix="WHERE (" prefixOverrides="OR" suffix=")">
-        <foreach collection="types" item="type" separator=" OR ">
-         <if test='type == "e"'>
-            email like concat('%', #{keyword}, '%')
-          </if>
-          <if test='type == "n"'>
-            memberName like concat('%', #{keyword}, '%')
-          </if>
-          <if test='type == "p"'>
-            memberPhone like concat('%', #{keyword}, '%')
-          </if>
-           <if test='type == "s"'>
-          store like concat('%', #{keyword}, '%')
-          </if>
-        </foreach>
-      </trim>
-    </if>
-    LIMIT #{countEnd} 
-  ) as tbl_member_alias
-</select>
 
 <!-- MemberMapper id = "checkEmailForException" -->
 <select id="checkEmailForException" parameterType="java.lang.String" resultType="int">

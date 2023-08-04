@@ -20,12 +20,12 @@
         where qno = #{qno}
     </select>
 
-    <!--  update read  -->
-    <select id="readQnaReplyRno" parameterType="com.project.fastpickup.admin.qna.dto.reply.QnaReplyReadDTO">
-        select qno, rno, email, reply, replyDate
-        from tbl_qna_reply
-        where rno = #{rno}
-    </select>
+<!--    &lt;!&ndash;  update read  &ndash;&gt;-->
+<!--    <select id="readQnaReplyRno" parameterType="com.project.fastpickup.admin.qna.dto.reply.QnaReplyReadDTO">-->
+<!--        select qno, rno, email, reply, replyDate-->
+<!--        from tbl_qna_reply-->
+<!--        where rno = #{rno}-->
+<!--    </select>-->
 
 <!--    &lt;!&ndash;  update  &ndash;&gt;-->
 <!--    <update id="updateQnaReply" parameterType="com.project.fastpickup.admin.qna.dto.reply.QnaReplyUpdateDTO">-->

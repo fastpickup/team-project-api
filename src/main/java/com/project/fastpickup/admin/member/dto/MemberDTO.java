@@ -1,10 +1,13 @@
 package com.project.fastpickup.admin.member.dto;
 
 /*
- * Date   : 2023.07.26
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */
+
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -23,6 +26,7 @@ public class MemberDTO extends User implements OAuth2User {
     private String email;
     private String memberName;
     private String memberPw;
+    private List<String> roleNames = new ArrayList<>();
 
     public MemberDTO(String email, String memberPw, String memberName, List<String> roleNames) {
 
@@ -34,6 +38,17 @@ public class MemberDTO extends User implements OAuth2User {
         this.memberPw = memberPw;
     }
 
+     public Map<String, Object> getClaims() {
+
+        // Mutable 해야한다.
+        Map<String, Object> map = new HashMap<>();
+
+        map.put("email", email);
+        map.put("memberName", memberName);
+        map.put("roleNames", roleNames);
+        return map;
+    }
+
     @Override
     public Map<String, Object> getAttributes() {
         return null;
@@ -42,5 +57,8 @@ public class MemberDTO extends User implements OAuth2User {
     @Override
     public String getName() {
         return this.email;
+    }
+
+    public void setProps(Map<String, Object> params) {
     }
 }

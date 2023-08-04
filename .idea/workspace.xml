@@ -5,8 +5,115 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c913bfde-b37f-47d4-a1bd-6ae82d28ad3c" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/restcontroller/QnaReplyRestController.java" afterDir="false" />
+>>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TeamProjectAPI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/fastpickup.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/fastpickup.test.iml" afterDir="false" />
+>>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TeamProjectAPI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/fastpickup.test.iml" beforeDir="false" />
+>>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/config/CustomSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/config/CustomSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/controller/MemberController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/CustomOAuth2UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/handler/CustomAccessDeniedHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/handler/CustomOAuthSuccessHandler.class" beforeDir="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/favicon.ico" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/QnaReplyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/QnaReplyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaReplyServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaReplyServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/review/mappers/ReviewMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/review/mappers/ReviewMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/stats/mappers/StatsMapperTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/stats/service/StatsServiceTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.project.fastpickup.product.service.ProductServiceTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.project.fastpickup.product.service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mappers/qna/QnaReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mappers/qna/QnaReplyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.project.fastpickup.product.service.ProductServiceTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+>>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
+=======
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/favicon.ico" beforeDir="false" />
+>>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdviceController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/FileController.class.uniqueId5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LikeController.class.uniqueId16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MemberEntryDataDTO$MemberEntryDataDTOBuilder.class.uniqueId10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MemberEntryDataDTO.class.uniqueId7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/OrderController.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ProductController.class.uniqueId8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/QnaController.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/QnaReplyController.class.uniqueId6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReviewController.class.uniqueId11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StatsController.class.uniqueId13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StatsMapper.class.uniqueId14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StatsService.class.uniqueId9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StatsServiceImpl.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StoreController.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StoreEntryDataDTO$StoreEntryDataDTOBuilder.class.uniqueId15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StoreEntryDataDTO.class.uniqueId12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/ProductServiceTests.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/FastpickupApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/FastpickupApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/QnaReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/QnaReplyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/qna/QnaReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/qna/QnaReplyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/service/QnaReplyServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/service/QnaReplyServiceTests.java" afterDir="false" />
+>>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+>>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
+>>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +138,16 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="fastpickup" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fastpickup" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fastpickup" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -43,8 +160,8 @@
       <list>
         <option value="HTML File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,8 +179,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+=======
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+>>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -72,15 +196,49 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;C:/finalProject/TeamProjectAPI&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;/Users/songsujung/Documents/TeamProjectAPI&quot;,
+>>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+<<<<<<< HEAD
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;71d1b2b25a7cd9c798b42c25c6768d20&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;71d1b2b25a7cd9c798b42c25c6768d20&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/finalProject/TeamProjectAPI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "71d1b2b25a7cd9c798b42c25c6768d20",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
+>>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -281,11 +439,22 @@
       <workItem from="1691030664982" duration="1246000" />
       <workItem from="1691038871343" duration="448000" />
       <workItem from="1691039451154" duration="529000" />
+<<<<<<< HEAD
+      <workItem from="1691043710676" duration="921000" />
+      <workItem from="1691109496173" duration="319000" />
+=======
+      <workItem from="1691040923218" duration="67000" />
+      <workItem from="1691040994136" duration="212000" />
+      <workItem from="1691041255246" duration="4582000" />
+>>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

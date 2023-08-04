@@ -1,7 +1,7 @@
 package com.project.fastpickup.admin.order.dto.order;
 
 /*
- * Date   : 2023.07.28
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */

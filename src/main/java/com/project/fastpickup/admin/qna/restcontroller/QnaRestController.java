@@ -47,16 +47,16 @@ public class QnaRestController {
 
     // update
     @PutMapping("update")
-    public Map<String, Integer> update(@RequestBody QnaUpdateDTO qnaUpdateDTO){
+    public Map<String, Integer> update(@RequestBody QnaUpdateDTO qnaUpdateDTO) {
 
-       int result =  qnaService.updateQna(qnaUpdateDTO);
+        int result = qnaService.updateQna(qnaUpdateDTO);
 
-        return Map.of("result" , result);
+        return Map.of("result", result);
     }
 
     // delete
     @DeleteMapping("delete/{qno}")
-    public Map<String, Integer> delete (@PathVariable("qno") Long qno){
+    public Map<String, Integer> delete(@PathVariable("qno") Long qno) {
 
         int result = qnaService.deleteQna(qno);
 

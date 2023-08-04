@@ -29,9 +29,6 @@ public interface MemberMapper {
     // Create Member 
     int joinMember(MemberConvertDTO memberConvertDTO);
 
-    // Create Store Member
-    int joinStoreMember(MemberConvertDTO memberConvertDTO);
-
     // Delete Member 
     int deleteMember(String email);
 
@@ -43,9 +40,6 @@ public interface MemberMapper {
 
     // Read Member
     MemberConvertDTO readMember(String email);
-
-    // List Member
-    List<MemberConvertDTO> listMember(PageRequestDTO pageRequestDTO);
 
     // total 
     int total(PageRequestDTO pageRequestDTO);

@@ -1,12 +1,12 @@
 package com.project.fastpickup.admin.order.mappers;
 
+import java.util.List;
+
 /*
- * Date   : 2023.07.28
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */
-
-import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -14,7 +14,6 @@ import org.apache.ibatis.annotations.Param;
 import com.project.fastpickup.admin.order.dto.OrderAndHistoryListDTO;
 import com.project.fastpickup.admin.order.dto.order.OrderCreateDTO;
 import com.project.fastpickup.admin.order.dto.order.OrderDTO;
-import com.project.fastpickup.admin.order.dto.order.OrderUpdateDTO;
 import com.project.fastpickup.admin.util.PageRequestDTO;
 
 // Order Mapper Interface 
@@ -27,25 +26,16 @@ public interface OrderMapper {
     // Read Order
     OrderDTO readOrder(Long ono);
 
-    // Update Order
-    Long updateOrder(OrderUpdateDTO orderUpdateDTO);
-
-    // Delete Order
-    int deleteOrder(Long ono);
-
-    // List Order
-    List<OrderAndHistoryListDTO> listOrderAndHistory(PageRequestDTO pageRequestDTO);
-
-    // List For Store Order
-    List<OrderAndHistoryListDTO> listOrderForStoreAndHistory(@Param("pr") PageRequestDTO pageRequestDTO,
-            @Param("sno") Long sno);
-
-    // Total For Store
-    int totalForStore(@Param("pr") PageRequestDTO pageRequestDTO, @Param("sno") Long sno);
-    
     // Total
     int total(PageRequestDTO pageRequestDTO);
 
     // Duplicate Ono
     int duplicateOno(Long ono);
+
+    // 내 주문 리스트 Mapper
+    List<OrderAndHistoryListDTO> listOrderMyHistory(@Param("email") String email,
+            @Param("pr") PageRequestDTO pageRequestDTO);
+
+    // 내 주문 상세 Mapper
+    OrderDTO readOrderMyHistory(Long ono);
 }

@@ -1,26 +1,20 @@
 package com.project.fastpickup.store.service;
 
-import java.util.List;
-
 /*
- * Date   : 2023.07.27
+ * Date   : 2023.08.03
  * Author : 권성준
  * E-mail : thistrik@naver.com
  */
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.project.fastpickup.admin.store.dto.StoreCreateDTO;
 import com.project.fastpickup.admin.store.dto.StoreDTO;
-import com.project.fastpickup.admin.store.dto.StoreListDTO;
-import com.project.fastpickup.admin.store.dto.StoreSalesDTO;
-import com.project.fastpickup.admin.store.dto.StoreUpdateDTO;
+import com.project.fastpickup.admin.store.dto.StoreDTOForMember;
 import com.project.fastpickup.admin.store.service.StoreService;
 import com.project.fastpickup.admin.util.PageRequestDTO;
 import com.project.fastpickup.admin.util.PageResponseDTO;
@@ -42,48 +36,7 @@ public class StoreServiceTests {
     private static final String TEST_EMAIL = "thistrik@naver.com";
     private static final Long TEST_SNO = 1L;
     private static final String TEST_STORE_PHONE = "2342-323-423";
-
-    // DTO 정의
-    private StoreDTO storeDTO;
-    private StoreUpdateDTO storeUpdateDTO;
-    private StoreCreateDTO storeCreateDTO;
-
-    // @BeforeEach 사용을 위한 셋팅
-    @BeforeEach
-    public void setUp() {
-        storeCreateDTO = StoreCreateDTO.builder()
-                .storeName(TEST_STORE_NAME)
-                .storeNumber(TEST_STORE_NUMBER)
-                .storeAddress(TEST_STORE_ADDRESS)
-                .storePhone(TEST_STORE_PHONE)
-                .email(TEST_EMAIL)
-                .build();
-
-        storeUpdateDTO = StoreUpdateDTO.builder()
-                .sno(TEST_SNO)
-                .storeName(TEST_STORE_NAME)
-                .storeNumber(TEST_STORE_NUMBER)
-                .storeAddress(TEST_STORE_ADDRESS)
-                .storePhone(TEST_STORE_PHONE)
-                .email(TEST_EMAIL)
-                .build();
-    }
-
-    // Create Store Service
-    @Test
-    @Transactional
-    @DisplayName("가맹점 정보 생성 테스트 서비스")
-    public void createStoreServiceTest() {
-        // GIVEN
-        log.info("=== Start Create Store Service Test ===");
-        // WHEN
-        storeService.createStore(storeCreateDTO);
-        // THEN
-        Assertions.assertEquals(TEST_EMAIL, "thistrik@naver.com");
-        Assertions.assertEquals(TEST_STORE_NAME, "교촌치킨");
-        Assertions.assertEquals(TEST_STORE_ADDRESS, "경기도 성남시");
-        log.info("=== End Create Store Service Test ===");
-    }
+    private static final String TEST_CATEGORY_NAME = "치킨";
 
     // Read Store Service
     @Test
@@ -99,62 +52,20 @@ public class StoreServiceTests {
         log.info("=== End Read Store Service Test ===");
     }
 
-    // Delete Store Service
+    // List Store For CategoryName
     @Test
     @Transactional
-    @DisplayName("가맹점 삭제 테스트 서비스")
-    public void deleteStoreServiceTest() {
+    @DisplayName("Service: 가맹점 카테고리 리스트")
+    public void listStoreForCategory() {
         // GIVEN
-        log.info("=== Start Delete Store Service Test ===");
-        // WHEN
-        storeService.deleteStore(TEST_SNO);
-        // THEN
-        StoreDTO deletedStore = storeService.readStore(TEST_SNO);
-        Assertions.assertNull(deletedStore, "deletedStore Should Be Null");
-        log.info("=== End Delete Store Service Test ===");
-    }
-
-    // List Store Service
-    @Test
-    @Transactional
-    @DisplayName("가맹점 리스트 테스트 서비스")
-    public void listStoreServiceTest() {
-        // GIVEN
-        log.info("=== Start List Store Service Test ===");
+        log.info("=== Start List Store For Category ===");
         // WHEN
         PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
-        PageResponseDTO<StoreListDTO> listStore = storeService.listStore(pageRequestDTO);
+        PageResponseDTO<StoreDTOForMember> listEveryThing = storeService.listStoreForCategory(TEST_CATEGORY_NAME,
+                pageRequestDTO);
         // THEN
-        log.info(listStore.getList());
-        Assertions.assertNotNull(listStore, "listStore Should Be Not Null");
-        log.info("=== End List Store Service Test ===");
-    }
-
-    // Sales Month Service
-    @Test
-    @Transactional
-    @DisplayName("Service: 가맹점 월별 매출 통계")
-    public void salesMonthStoreService() {
-        // GIVEN
-        log.info("=== Start Sales Month Service ===");
-        // WHEN
-        List<StoreSalesDTO> storeSalesDTO = storeService.salesMonth(TEST_SNO);
-        log.info(storeSalesDTO);
-        Assertions.assertNotNull(storeSalesDTO, "storeSalesDTO Should Be Not Null");
-        log.info("=== End Sales Month Service ===");
-    }
-
-    // Sales Day Service
-    @Test
-    @Transactional
-    @DisplayName("Service: 가맹점 일별 매출 통계")
-    public void salesDayStoreService() {
-        // GIVEN
-        log.info("=== Start Sales Day Service ===");
-        // WHEN
-        List<StoreSalesDTO> storeSalesDTO = storeService.salesDate(TEST_SNO);
-        log.info(storeSalesDTO);
-        Assertions.assertNotNull(storeSalesDTO, "storeSalesDTO Should Be Not Null");
-        log.info("=== End Sales Day Service ===");
+        log.info(listEveryThing.getList());
+        Assertions.assertNotNull(listEveryThing, "listEveryThing Should Be Not Null");
+        log.info("=== End List Store For Category ===");
     }
 }
