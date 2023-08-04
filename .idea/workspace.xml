@@ -11,15 +11,49 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TeamProjectAPI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/fastpickup.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/fastpickup.test.iml" afterDir="false" />
+>>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/config/CustomSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/config/CustomSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/controller/MemberController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/CustomOAuth2UserService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/handler/CustomAccessDeniedHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/handler/CustomOAuthSuccessHandler.class" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/favicon.ico" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/QnaReplyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/QnaReplyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaReplyServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaReplyServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/review/mappers/ReviewMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/review/mappers/ReviewMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/stats/mappers/StatsMapperTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/stats/service/StatsServiceTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.project.fastpickup.product.service.ProductServiceTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.project.fastpickup.product.service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mappers/qna/QnaReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mappers/qna/QnaReplyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.project.fastpickup.product.service.ProductServiceTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+>>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdviceController.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/FileController.class.uniqueId5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LikeController.class.uniqueId16" beforeDir="false" />
@@ -38,7 +72,21 @@
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StoreEntryDataDTO$StoreEntryDataDTOBuilder.class.uniqueId15" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StoreEntryDataDTO.class.uniqueId12" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/ProductServiceTests.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/FastpickupApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/FastpickupApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/QnaReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/QnaReplyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/qna/QnaReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/qna/QnaReplyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/service/QnaReplyServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/service/QnaReplyServiceTests.java" afterDir="false" />
+>>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +142,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -114,13 +163,34 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;71d1b2b25a7cd9c798b42c25c6768d20&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/finalProject/TeamProjectAPI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "71d1b2b25a7cd9c798b42c25c6768d20",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\gitSh\reactProject\TeamProject\src\main\webapp\WEB-INF\admin\store" />
@@ -136,8 +206,21 @@
       <recent name="E:\gitSh\reactProject\TeamProject\src\main\resources\webapp\WEB-INF\admin" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.FastpickupApplication">
-    <configuration name="ProductMapperTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.QnaReplyServiceTests">
+    <configuration name="FastpickupApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.project.fastpickup.FastpickupApplication" />
+      <module name="fastpickup.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.fastpickup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QnaReplyMapperTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -150,7 +233,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.project.fastpickup.product.mappers.ProductMapperTests&quot;" />
+            <option value="&quot;com.project.fastpickup.qna.mappers.QnaReplyMapperTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -161,7 +244,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="ProductMapperTests.testCreateProduct" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QnaReplyMapperTests.readQnaReplyRnoTestMapper" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -174,7 +257,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.project.fastpickup.product.mappers.ProductMapperTests.testCreateProduct&quot;" />
+            <option value="&quot;com.project.fastpickup.qna.mappers.QnaReplyMapperTests.readQnaReplyRnoTestMapper&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,7 +268,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="ProductServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QnaReplyServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -198,7 +281,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.project.fastpickup.product.service.ProductServiceTests&quot;" />
+            <option value="&quot;com.project.fastpickup.qna.service.QnaReplyServiceTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -209,7 +292,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="ProductServiceTests.testListStoreProduct" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QnaServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -222,31 +305,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.project.fastpickup.product.service.ProductServiceTests.testListStoreProduct&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="ProductServiceTests.testUpdateProduct" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.project.fastpickup.product.service.ProductServiceTests.testUpdateProduct&quot;" />
+            <option value="&quot;com.project.fastpickup.qna.service.QnaServiceTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -280,20 +339,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.ProductMapperTests" />
-      <item itemvalue="Gradle.ProductServiceTests" />
-      <item itemvalue="Gradle.ProductServiceTests.testUpdateProduct" />
-      <item itemvalue="Gradle.ProductMapperTests.testCreateProduct" />
-      <item itemvalue="Gradle.ProductServiceTests.testListStoreProduct" />
-      <item itemvalue="Spring Boot.FastpickupApplication" />
+      <item itemvalue="Application.FastpickupApplication" />
+      <item itemvalue="Gradle.QnaReplyMapperTests" />
+      <item itemvalue="Gradle.QnaReplyMapperTests.readQnaReplyRnoTestMapper" />
+      <item itemvalue="Gradle.QnaReplyServiceTests" />
+      <item itemvalue="Gradle.QnaServiceTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ProductServiceTests.testUpdateProduct" />
-        <item itemvalue="Gradle.ProductMapperTests" />
-        <item itemvalue="Gradle.ProductServiceTests" />
-        <item itemvalue="Gradle.ProductMapperTests.testCreateProduct" />
-        <item itemvalue="Gradle.ProductServiceTests.testListStoreProduct" />
+        <item itemvalue="Gradle.QnaReplyServiceTests" />
+        <item itemvalue="Gradle.QnaReplyMapperTests" />
+        <item itemvalue="Gradle.QnaReplyMapperTests.readQnaReplyRnoTestMapper" />
+        <item itemvalue="Application.FastpickupApplication" />
+        <item itemvalue="Gradle.QnaServiceTests" />
       </list>
     </recent_temporary>
   </component>

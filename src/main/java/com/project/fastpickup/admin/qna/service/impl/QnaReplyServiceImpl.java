@@ -16,11 +16,11 @@ public class QnaReplyServiceImpl implements QnaReplyService {
 
     private final QnaReplyMapper qnaReplyMapper;
 
-    // create
-    @Override
-    public int createQnaReply(QnaReplyRegistDTO qnaReplyRegistDTO) {
-        return qnaReplyMapper.createQnaReply(qnaReplyRegistDTO);
-    }
+//    // create
+//    @Override
+//    public int createQnaReply(QnaReplyRegistDTO qnaReplyRegistDTO) {
+//        return qnaReplyMapper.createQnaReply(qnaReplyRegistDTO);
+//    }
 
     // read
     @Override
@@ -28,27 +28,27 @@ public class QnaReplyServiceImpl implements QnaReplyService {
         return qnaReplyMapper.readQnaReply(qno);
     }
 
-    // update read
-    @Override
-    public QnaReplyReadDTO readQnaReplyRno(Long rno) {
-        return qnaReplyMapper.readQnaReplyRno(rno);
-    }
-
-    // update
-    @Override
-    public int updateQnaReply(QnaReplyUpdateDTO qnaReplyUpdateDTO) {
-        return qnaReplyMapper.updateQnaReply(qnaReplyUpdateDTO);
-    }
-
-    // delete
-    @Override
-    public int deleteQnaReply(Long rno) {
-        return qnaReplyMapper.deleteQnaReply(rno);
-    }
-
-    // reply count
-    @Override
-    public int replyCount(Long qno) {
-        return qnaReplyMapper.replyCount(qno);
-    }
+//    // update read
+//    @Override
+//    public QnaReplyReadDTO readQnaReplyRno(Long rno) {
+//        return qnaReplyMapper.readQnaReplyRno(rno);
+//    }
+//
+//    // update
+//    @Override
+//    public int updateQnaReply(QnaReplyUpdateDTO qnaReplyUpdateDTO) {
+//        return qnaReplyMapper.updateQnaReply(qnaReplyUpdateDTO);
+//    }
+//
+//    // delete
+//    @Override
+//    public int deleteQnaReply(Long rno) {
+//        return qnaReplyMapper.deleteQnaReply(rno);
+//    }
+//
+//    // reply count
+//    @Override
+//    public int replyCount(Long qno) {
+//        return qnaReplyMapper.replyCount(qno);
+//    }
 }
