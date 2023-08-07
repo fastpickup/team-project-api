@@ -33,17 +33,31 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        log.info("loadUserByUserName : " + username);
+        log.info("loadUserByUserName =====================================================: " + username);
+
+
 
         MemberReadDTO readDTO = memberMapper.selectOne(username);
 
-        log.info(readDTO);
+        log.info("readDTO===========================================================:" + readDTO);
 
-        MemberDTO memberDTO = new MemberDTO(username,
+        MemberDTO memberDTO = new MemberDTO(
+                username,
                 readDTO.getMemberPw(),
                 readDTO.getMemberName(),
                 // 권한은 SimpleGranteAuthority객체이므로 나중에 Map을 써서 타입을 바꿔줘야 함
                 readDTO.getRolenames());
+
+        log.info(memberDTO);
+        log.info(memberDTO);log.info(memberDTO);log.info(memberDTO);log.info(memberDTO);
+        log.info(memberDTO);log.info(memberDTO);
+        log.info(memberDTO);
+        log.info(memberDTO);
+        log.info(memberDTO);
+
+
+
+
 
         return memberDTO;
     }

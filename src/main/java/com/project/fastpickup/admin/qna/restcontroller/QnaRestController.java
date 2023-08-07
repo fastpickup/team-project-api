@@ -23,10 +23,10 @@ public class QnaRestController {
     private final QnaService qnaService;
 
     // list
-    @GetMapping("list")
-    public PageResponseDTO<QnaListDTO> list(PageRequestDTO pageRequestDTO) {
+    @GetMapping("list/{email}")
+    public PageResponseDTO<QnaListDTO> list(@PathVariable("email") String email, PageRequestDTO pageRequestDTO) {
 
-        return qnaService.listQna(pageRequestDTO);
+        return qnaService.listQna(email,pageRequestDTO);
     }
 
     // create

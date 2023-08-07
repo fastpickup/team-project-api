@@ -4,116 +4,119 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c913bfde-b37f-47d4-a1bd-6ae82d28ad3c" name="Changes" comment="">
-<<<<<<< HEAD
+    <list default="true" id="c2b311ff-d8ea-48a0-b27f-50d216e64ef5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/dto/ReviewMemberListDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/mappers/ReviewMemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/review/ReviewMemberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/review/mappers/ReviewMapperAPITests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-<<<<<<< HEAD
-=======
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/restcontroller/QnaReplyRestController.java" afterDir="false" />
->>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-<<<<<<< HEAD
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TeamProjectAPI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/fastpickup.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/fastpickup.test.iml" afterDir="false" />
->>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
-=======
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TeamProjectAPI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92475e17-8384-434c-a4bc-88f52bbef6dc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92475e17-8384-434c-a4bc-88f52bbef6dc/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/92475e17-8384-434c-a4bc-88f52bbef6dc/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/fastpickup.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/fastpickup.test.iml" beforeDir="false" />
->>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/com/project/fastpickup/admin/member/config/CustomSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/com/project/fastpickup/admin/member/config/CustomSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/com/project/fastpickup/admin/member/dto/MemberDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/com/project/fastpickup/admin/member/dto/MemberDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/mappers/qna/QnaReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/mappers/qna/QnaReplyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/mappers/review/ReviewMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/com/project/fastpickup/qna/service/QnaReplyServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/com/project/fastpickup/qna/service/QnaReplyServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/com/project/fastpickup/review/mappers/ReviewMapperTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/com/project/fastpickup/review/service/ReviewServiceTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/config/CustomSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/config/CustomSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/controller/MemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/CustomOAuth2UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/handler/CustomAccessDeniedHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/handler/CustomOAuthSuccessHandler.class" beforeDir="false" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/favicon.ico" beforeDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/dto/MemberDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/dto/MemberDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/dto/MemberReadDTO$MemberReadDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/dto/MemberReadDTO$MemberReadDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/dto/MemberReadDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/dto/MemberReadDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/member/security/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/order/dto/order/OrderUpdateDTO$OrderUpdateDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/order/dto/order/OrderUpdateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/order/dto/orderhistory/OrderHistoryUpdateDTO$OrderHistoryUpdateDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/order/dto/orderhistory/OrderHistoryUpdateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/mappers/QnaMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/mappers/QnaMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/QnaReplyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/QnaReplyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/QnaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/QnaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/impl/QnaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/qna/service/impl/QnaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewDTO$ReviewDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewListDTO$ReviewListDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewListDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewModifyDTO$ReviewModifyDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewModifyDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewReadDTO$ReviewReadDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewReadDTO$ReviewReadDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewReadDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewReadDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewRegistDTO$ReviewRegistDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/dto/ReviewRegistDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/mappers/ReviewMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/restcontroller/ReviewRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/restcontroller/ReviewRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/service/ReviewService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/review/service/impl/ReviewServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/store/dto/StoreCreateDTO$StoreCreateDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/store/dto/StoreCreateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/store/dto/StoreListDTO$StoreListDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/store/dto/StoreListDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/store/dto/StoreSalesDTO$StoreSalesDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/store/dto/StoreSalesDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/store/dto/StoreUpdateDTO$StoreUpdateDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/project/fastpickup/admin/store/dto/StoreUpdateDTO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaMapperTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaReplyServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaReplyServiceTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/qna/service/QnaServiceTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/review/mappers/ReviewMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/review/mappers/ReviewMapperTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/stats/mappers/StatsMapperTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/stats/service/StatsServiceTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.project.fastpickup.product.service.ProductServiceTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/review/mappers/ReviewMapperTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/project/fastpickup/review/service/ReviewServiceTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.project.fastpickup.product.service.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/mappers/qna/QnaReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mappers/qna/QnaReplyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.project.fastpickup.product.service.ProductServiceTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mappers/qna/QnaMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mappers/qna/QnaMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mappers/review/ReviewMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
->>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
-=======
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/favicon.ico" beforeDir="false" />
->>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdviceController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/FileController.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LikeController.class.uniqueId16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MemberEntryDataDTO$MemberEntryDataDTOBuilder.class.uniqueId10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MemberEntryDataDTO.class.uniqueId7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/OrderController.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ProductController.class.uniqueId8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/QnaController.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/QnaReplyController.class.uniqueId6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReviewController.class.uniqueId11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StatsController.class.uniqueId13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StatsMapper.class.uniqueId14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StatsService.class.uniqueId9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StatsServiceImpl.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StoreController.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StoreEntryDataDTO$StoreEntryDataDTOBuilder.class.uniqueId15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StoreEntryDataDTO.class.uniqueId12" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/ProductServiceTests.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/FastpickupApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/FastpickupApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/mappers/QnaReplyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/config/CustomSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/config/CustomSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/dto/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/dto/MemberReadDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/dto/MemberReadDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/security/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/security/filter/JWTCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/security/filter/JWTCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/security/handler/APILoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/security/handler/APILoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/security/handler/OAuthAPILoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/member/security/handler/OAuthAPILoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/mappers/QnaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/mappers/QnaMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/restcontroller/QnaRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/QnaReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/QnaReplyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/impl/QnaReplyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/QnaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/QnaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/impl/QnaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/service/impl/QnaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/dto/ReviewDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/dto/ReviewListDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/dto/ReviewModifyDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/dto/ReviewReadDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/dto/ReviewReadDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/dto/ReviewRegistDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/mappers/ReviewMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/restcontroller/ReviewRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/restcontroller/ReviewRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/service/ReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/review/service/impl/ReviewServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/qna/QnaReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/qna/QnaReplyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/mappers/QnaReplyMapperTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/service/QnaReplyServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/service/QnaReplyServiceTests.java" afterDir="false" />
->>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
->>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
->>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/qna/QnaMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/qna/QnaMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/review/ReviewMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/mappers/QnaMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/mappers/QnaMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/service/QnaServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/service/QnaServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/review/mappers/ReviewMapperTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/fastpickup/review/service/ReviewServiceTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,25 +131,12 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="fastpickup" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="fastpickup" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="fastpickup" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -155,113 +145,26 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Interface" />
-        <option value="JavaScript File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2T5iK06qHLBm2Frrsrj4irFZzP9" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2TVgeAK4GF7HycJloklZDaC6MdZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-=======
-<<<<<<< HEAD
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
->>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-<<<<<<< HEAD
-    &quot;last_opened_file_path&quot;: &quot;C:/finalProject/TeamProjectAPI&quot;,
-=======
-    &quot;last_opened_file_path&quot;: &quot;/Users/songsujung/Documents/TeamProjectAPI&quot;,
->>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-<<<<<<< HEAD
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;71d1b2b25a7cd9c798b42c25c6768d20&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;71d1b2b25a7cd9c798b42c25c6768d20&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/finalProject/TeamProjectAPI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "71d1b2b25a7cd9c798b42c25c6768d20",
-    "vue.rearranger.settings.migration": "true"
->>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
->>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
-    ]
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\gitSh\reactProject\TeamProject\src\main\webapp\WEB-INF\admin\store" />
-      <recent name="E:\gitSh\reactProject\TeamProject\src\main\webapp\WEB-INF\admin\order" />
-      <recent name="E:\gitSh\reactProject\TeamProject\src\main\resources\static" />
-      <recent name="E:\gitSh\reactProject\TeamProject\src\main\resources\mappers\like" />
-      <recent name="E:\gitSh\reactProject\TeamProject\src\main\resources\mappers\product" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\gitSh\reactProject\TeamProject\src\main\resources\static" />
-      <recent name="E:\gitSh\reactProject\TeamProject\src\main\webapp\WEB-INF" />
-      <recent name="E:\gitSh\reactProject\TeamProject\src\main\resources\mappers" />
-      <recent name="E:\gitSh\reactProject\TeamProject\src\main\resources\webapp\WEB-INF\admin" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Gradle.QnaReplyServiceTests">
+}]]></component>
+  <component name="RunManager" selected="Application.FastpickupApplication">
     <configuration name="FastpickupApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.project.fastpickup.FastpickupApplication" />
       <module name="fastpickup.main" />
@@ -275,7 +178,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QnaReplyMapperTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QnaMapperTests.listQnaTestMapper" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -288,7 +191,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.project.fastpickup.qna.mappers.QnaReplyMapperTests&quot;" />
+            <option value="&quot;com.project.fastpickup.qna.mappers.QnaMapperTests.listQnaTestMapper&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -299,7 +202,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="QnaReplyMapperTests.readQnaReplyRnoTestMapper" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QnaServiceTests.listQnaTestService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -312,55 +215,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.project.fastpickup.qna.mappers.QnaReplyMapperTests.readQnaReplyRnoTestMapper&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="QnaReplyServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.project.fastpickup.qna.service.QnaReplyServiceTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="QnaServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.project.fastpickup.qna.service.QnaServiceTests&quot;" />
+            <option value="&quot;com.project.fastpickup.qna.service.QnaServiceTests.listQnaTestService&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -372,102 +227,46 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="TeamProject" />
+      <module name="TeamProjectAPI" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="TeamProject" />
+      <module name="TeamProjectAPI" />
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FastpickupApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="fastpickup.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.fastpickup.FastpickupApplication" />
-      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.FastpickupApplication" />
-      <item itemvalue="Gradle.QnaReplyMapperTests" />
-      <item itemvalue="Gradle.QnaReplyMapperTests.readQnaReplyRnoTestMapper" />
-      <item itemvalue="Gradle.QnaReplyServiceTests" />
-      <item itemvalue="Gradle.QnaServiceTests" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.QnaReplyServiceTests" />
-        <item itemvalue="Gradle.QnaReplyMapperTests" />
-        <item itemvalue="Gradle.QnaReplyMapperTests.readQnaReplyRnoTestMapper" />
+        <item itemvalue="Gradle.QnaMapperTests.listQnaTestMapper" />
+        <item itemvalue="Gradle.QnaServiceTests.listQnaTestService" />
         <item itemvalue="Application.FastpickupApplication" />
-        <item itemvalue="Gradle.QnaServiceTests" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c913bfde-b37f-47d4-a1bd-6ae82d28ad3c" name="Changes" comment="" />
-      <created>1690339274309</created>
+      <changelist id="c2b311ff-d8ea-48a0-b27f-50d216e64ef5" name="Changes" comment="" />
+      <created>1691133755288</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1690339274309</updated>
-      <workItem from="1690339275308" duration="3649000" />
-      <workItem from="1690345896807" duration="14203000" />
-      <workItem from="1690374605015" duration="3365000" />
-      <workItem from="1690418578215" duration="19464000" />
-      <workItem from="1690445830893" duration="99000" />
-      <workItem from="1690445942220" duration="7113000" />
-      <workItem from="1690465198934" duration="3719000" />
-      <workItem from="1690504488829" duration="23747000" />
-      <workItem from="1690618304186" duration="22297000" />
-      <workItem from="1690702610692" duration="25000" />
-      <workItem from="1690702660870" duration="271000" />
-      <workItem from="1690703067306" duration="197000" />
-      <workItem from="1690721621124" duration="4872000" />
-      <workItem from="1690763364593" duration="29630000" />
-      <workItem from="1690849907752" duration="24762000" />
-      <workItem from="1690937101914" duration="1002000" />
-      <workItem from="1690951491401" duration="4568000" />
-      <workItem from="1691022686475" duration="31000" />
-      <workItem from="1691030664982" duration="1246000" />
-      <workItem from="1691038871343" duration="448000" />
-      <workItem from="1691039451154" duration="529000" />
-<<<<<<< HEAD
-      <workItem from="1691043710676" duration="921000" />
-      <workItem from="1691109496173" duration="319000" />
-=======
-      <workItem from="1691040923218" duration="67000" />
-      <workItem from="1691040994136" duration="212000" />
-      <workItem from="1691041255246" duration="4582000" />
->>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
+      <updated>1691133755288</updated>
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/project/fastpickup/qna/mappers/QnaMapperTests.java</url>
+          <line>61</line>
           <option name="timeStamp" value="1" />
-        </breakpoint>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

@@ -87,6 +87,7 @@ public class CustomSecurityConfig {
         // Oatuh2 Login
         http.oauth2Login(config -> {
             // react login Successs Hnalder 안에서 refresh Token 발급
+            log.info("--------------------------------------------------Oauth Login--------------------------------------");
             config.successHandler(new OAuthAPILoginSuccessHandler());
         });
         http.exceptionHandling(config -> config.accessDeniedHandler(new CustomAccessDeniedHandler()));

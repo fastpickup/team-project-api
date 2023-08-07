@@ -6,6 +6,7 @@ import com.project.fastpickup.admin.qna.dto.QnaRegistDTO;
 import com.project.fastpickup.admin.qna.dto.QnaUpdateDTO;
 import com.project.fastpickup.admin.util.PageRequestDTO;
 import com.project.fastpickup.admin.util.PageResponseDTO;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
 public interface QnaService {
 
     // list
-    PageResponseDTO<QnaListDTO> listQna (PageRequestDTO pageRequestDTO);
+    PageResponseDTO<QnaListDTO> listQna (String email, PageRequestDTO pageRequestDTO);
 
     // Create
     int createQna (QnaRegistDTO qnaRegistDTO);

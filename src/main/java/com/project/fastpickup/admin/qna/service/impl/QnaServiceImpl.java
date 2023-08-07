@@ -10,6 +10,7 @@ import com.project.fastpickup.admin.util.PageRequestDTO;
 import com.project.fastpickup.admin.util.PageResponseDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,8 +24,8 @@ public class QnaServiceImpl implements QnaService {
 
     // list
     @Override
-    public PageResponseDTO<QnaListDTO> listQna(PageRequestDTO pageRequestDTO) {
-        List<QnaListDTO> list = qnaMapper.listQna(pageRequestDTO);
+    public PageResponseDTO<QnaListDTO> listQna(@Param("email") String email, PageRequestDTO pageRequestDTO) {
+        List<QnaListDTO> list = qnaMapper.listQna("thistrik@naver.com",pageRequestDTO);
         long total = qnaMapper.listCount(pageRequestDTO);
 
         return PageResponseDTO.<QnaListDTO>withAll()

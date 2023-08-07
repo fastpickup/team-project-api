@@ -73,7 +73,7 @@ public class QnaServiceTests {
         log.info("=== Start List Qna Test Service ===");
         // WHEN
         PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
-        PageResponseDTO<QnaListDTO> list = qnaService.listQna(pageRequestDTO);
+        PageResponseDTO<QnaListDTO> list = qnaService.listQna("9805121234@naver.com",pageRequestDTO);
         log.info(list);
         // THEN
         log.info("=== End List Qna Test Service ===");

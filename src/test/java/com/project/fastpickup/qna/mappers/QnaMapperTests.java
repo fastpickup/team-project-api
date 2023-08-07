@@ -65,7 +65,7 @@ public class QnaMapperTests {
         log.info("=== Start List Qna Test Mapper ===");
         // WHEN
         PageRequestDTO list = PageRequestDTO.builder().build();
-        List<QnaListDTO> qnaList = qnaMapper.listQna(list);
+        List<QnaListDTO> qnaList = qnaMapper.listQna("9805121234@naver.com",list);
         log.info(qnaList);
         // THEN
         log.info("=== End List Qna Test Mapper ===");

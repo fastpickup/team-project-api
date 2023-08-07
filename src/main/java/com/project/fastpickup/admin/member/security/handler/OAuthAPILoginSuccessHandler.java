@@ -43,6 +43,8 @@ public class OAuthAPILoginSuccessHandler implements AuthenticationSuccessHandler
 
     String refreshToken = JWTUtil.generateToken(claims, 60 * 24);
 
+    String memberName = memberDTO.getMemberName();
+
     Gson gson = new Gson();
 
     // Map<String, Object> dataMap = new HashMap<>();
@@ -51,12 +53,13 @@ public class OAuthAPILoginSuccessHandler implements AuthenticationSuccessHandler
 
     claims.put("accessToken", accessToken);
     claims.put("refreshToken", refreshToken);
+    claims.put("memberName", memberName);
 
     String jsonStr = gson.toJson(claims);
 
     String encodeStr = URLEncoder.encode(jsonStr, "UTF-8");
 
-    response.sendRedirect("http://localhost:3000/member/oauthResult?data=" + encodeStr);
+    response.sendRedirect("http://localhost:3000/member/mypage?data=" + encodeStr);
 
   }
 
