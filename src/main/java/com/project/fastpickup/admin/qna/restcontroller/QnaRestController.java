@@ -34,7 +34,6 @@ public class QnaRestController {
     public Map<String, Integer> create(@RequestBody QnaRegistDTO qnaRegistDTO) {
 
         int result = qnaService.createQna(qnaRegistDTO);
-
         return Map.of("result", result);
     }
 
