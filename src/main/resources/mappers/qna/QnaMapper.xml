@@ -8,24 +8,24 @@
 
     <!--  list  -->
     <select id="listQna" resultType="com.project.fastpickup.admin.qna.dto.QnaListDTO">
-        select q.qno, q.qnaTitle, q.registDate, q.email, if(r.rno > 1, 1, 0) as replyStatus
+        select q.qno, q.qnaTitle, q.registDate, q.email, IF(r.rno > 1, 1, 0) as replyStatus
         from tbl_qna q
-        left outer join tbl_qna_reply r on q.qno = r.qno
-        where q.qno > 0
-        <if test="keyword != null and type != null">
+        LEFT outer join tbl_qna_reply r on q.qno = r.qno
+        where q.qno > 0 and q.email = #{email}
+        <if test="pageRequestDTO.keyword != null and pageRequestDTO.type != null">
             <trim prefix="AND (" prefixOverrides="OR" suffix=")">
-                <foreach collection="types" item="type" separator=" OR ">
+                <foreach collection="pageRequestDTO.types" item="type" separator=" OR ">
                     <if test='type == "e"'>
-                        q.email like concat('%', #{keyword}, '%')
+                        q.email like concat('%', #{pageRequestDTO.keyword}, '%')
                     </if>
                     <if test='type == "t"'>
-                        q.qnaTitle like concat('%', #{keyword}, '%')
+                        q.qnaTitle lite concat('%', #{pageRequestDTO.keyword}, '%')
                     </if>
                 </foreach>
             </trim>
         </if>
-        order by q.qno desc
-        limit #{skip}, #{size}
+        order by q.qno DESC
+        limit #{pageRequestDTO.skip}, #{pageRequestDTO.size}
     </select>
 
     <!--  listCount  -->
