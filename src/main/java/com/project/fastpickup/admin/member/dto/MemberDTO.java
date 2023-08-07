@@ -25,42 +25,44 @@ import lombok.Setter;
 @ToString
 public class MemberDTO extends User implements OAuth2User {
 
-    private String email;
-    private String memberName;
-    private String memberPw;
-    private List<String> roleNames = new ArrayList<>();
+  private String email;
+  private String memberName;
+  private String memberPw;
+  private List<String> roleNames = new ArrayList<>();
 
-    public MemberDTO(String email, String memberPw, String memberName, List<String> roleNames) {
+  public MemberDTO(String email, String memberPw, String memberName, List<String> roleNames) {
 
-        // super(email,mpw, List.of(new SimpleGrantedAuthority("ROLE_USER")));
-        super(email, memberPw,
-                roleNames.stream().map(str -> new SimpleGrantedAuthority("ROLE_" + str)).collect(Collectors.toList()));
-        this.memberName = memberName;
-        this.email = email;
-        this.memberPw = memberPw;
-    }
+    // super(email,mpw, List.of(new SimpleGrantedAuthority("ROLE_USER")));
+    super(email, memberPw,
+      roleNames.stream().map(str -> new SimpleGrantedAuthority("ROLE_" + str)).collect(Collectors.toList()));
+    this.memberName = memberName;
+    this.email = email;
+    this.memberPw = memberPw;
+    this.roleNames = roleNames;
+  }
 
-     public Map<String, Object> getClaims() {
+  public Map<String, Object> getClaims() {
 
-        // Mutable 해야한다.
-        Map<String, Object> map = new HashMap<>();
+    // Mutable 해야한다.
+    Map<String, Object> map = new HashMap<>();
 
-        map.put("email", email);
-        map.put("memberName", memberName);
-        map.put("roleNames", roleNames);
-        return map;
-    }
+    map.put("email", email);
+    map.put("memberPw", memberPw);
+    map.put("memberName", memberName);
+    map.put("roleNames", roleNames);
+    return map;
+  }
 
-    @Override
-    public Map<String, Object> getAttributes() {
-        return null;
-    }
+  @Override
+  public Map<String, Object> getAttributes() {
+    return null;
+  }
 
-    @Override
-    public String getName() {
-        return this.email;
-    }
+  @Override
+  public String getName() {
+    return this.email;
+  }
 
-    public void setProps(Map<String, Object> params) {
-    }
+  public void setProps(Map<String, Object> params) {
+  }
 }
