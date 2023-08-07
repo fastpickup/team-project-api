@@ -19,9 +19,10 @@ import lombok.ToString;
 @Data
 @ToString
 @Builder
-public class ReviewMemberListDTO {
+public class ReviewListDTO {
 
     private Long rno;                 // 리뷰 번호 PK
+    private Long ono;                 // 주문 번호
     private Long sno;                 // 가맹점 번호
     private String storeName;         // 가맹점 이름
     private Long pno;                 // 상품 번호
