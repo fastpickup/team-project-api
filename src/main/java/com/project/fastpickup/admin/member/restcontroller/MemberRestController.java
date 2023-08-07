@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -58,7 +59,7 @@ public class MemberRestController {
     // Join Member API
     @PreAuthorize("permitAll")
     @PostMapping("create")
-    public ResponseEntity<Map<String, Integer>> postJoinMember(MemberConvertDTO memberConvertDTO) {
+    public ResponseEntity<Map<String, Integer>> postJoinMember(@RequestBody MemberConvertDTO memberConvertDTO) {
         log.info("RestController | Api Post Create Member");
         int result = memberService.joinMember(memberConvertDTO);
         return new ResponseEntity<>(Map.of("result", result), HttpStatus.OK);
@@ -76,16 +77,17 @@ public class MemberRestController {
     // Get Member Update API
     @PreAuthorize("permitAll")
     @GetMapping("update/{email}")
-    public ResponseEntity<Map<String, MemberConvertDTO>> getUpdateMember(@PathVariable("eamil") String email) {
+    public ResponseEntity<Map<String, MemberConvertDTO>> getUpdateMember(@PathVariable("email") String email) {
         log.info("RestController | Api Get Update Member");
         MemberConvertDTO member = memberService.readMember(email);
+        log.info("회원정보" + member);
         return new ResponseEntity<>(Map.of("member", member), HttpStatus.OK);
     }
 
     // Put Member Update API
     @PreAuthorize("permitAll")
     @PutMapping("update")
-    public ResponseEntity<Map<String, Integer>> postUpdateMember(MemberConvertDTO memberConvertDTO) {
+    public ResponseEntity<Map<String, Integer>> postUpdateMember(@RequestBody MemberConvertDTO memberConvertDTO) {
         log.info("RestController | Api Post Update Member");
         int result = memberService.updateMember(memberConvertDTO);
         return new ResponseEntity<>(Map.of("result", result), HttpStatus.OK);
