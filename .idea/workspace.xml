@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c913bfde-b37f-47d4-a1bd-6ae82d28ad3c" name="Changes" comment="">
 <<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
 =======
       <change afterPath="$PROJECT_DIR$/src/main/java/com/project/fastpickup/admin/qna/restcontroller/QnaReplyRestController.java" afterDir="false" />
 >>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
@@ -109,6 +113,7 @@
 =======
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
 >>>>>>> 868d4e146b90d74785ab30a4f402974938d4b6f7
+>>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +182,12 @@
 <<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+=======
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+>>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -186,12 +196,21 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+<<<<<<< HEAD
+    &quot;last_opened_file_path&quot;: &quot;C:/finalProject/TeamProjectAPI&quot;,
+=======
     &quot;last_opened_file_path&quot;: &quot;/Users/songsujung/Documents/TeamProjectAPI&quot;,
+>>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+<<<<<<< HEAD
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;71d1b2b25a7cd9c798b42c25c6768d20&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -219,13 +238,14 @@
     "spring.configuration.checksum": "71d1b2b25a7cd9c798b42c25c6768d20",
     "vue.rearranger.settings.migration": "true"
 >>>>>>> 74d8122413c0b47d7eeac8cb7323780529dd766b
+>>>>>>> cc2a499fa13f8197e187b5c4cb5652e9c881b066
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\gitSh\reactProject\TeamProject\src\main\webapp\WEB-INF\admin\store" />

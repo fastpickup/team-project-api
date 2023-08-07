@@ -17,7 +17,7 @@ public class QnaReplyRestController {
 
     // qno에 대한 댓글 조회 - qno 기준
     @GetMapping("{qno}")
-    public QnaReplyReadDTO readQno (@PathVariable("qno") Long qno){
+    public QnaReplyReadDTO readQno(@PathVariable("qno") Long qno) {
 
         return qnaReplyService.readQnaReply(qno);
     }
