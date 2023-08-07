@@ -61,6 +61,7 @@
   m.email,
   m.memberName,
   m.memberPhone,
+  m.memberPw,
   s.sno 
   FROM
   tbl_member m

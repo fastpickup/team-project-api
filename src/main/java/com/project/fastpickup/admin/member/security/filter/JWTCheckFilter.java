@@ -43,7 +43,7 @@ public class JWTCheckFilter extends OncePerRequestFilter {
         // Login 이면 Filter 검증 안한다
         if (path.equals("/api/member/login")
                 || path.equals("/api/member/refresh")
-                || path.startsWith("/api/member/")) {
+        ) {
             return true;
         }
 
@@ -85,12 +85,18 @@ public class JWTCheckFilter extends OncePerRequestFilter {
             log.info("JWT claims: " + claims);
 
             String email = (String) claims.get("email");
+            log.info("Email-----------------------: " + email);
             String memberPw = (String) claims.get("memberPw");
+            //String memberPw = "1111";
+            log.info("memberPw-----------------------: " + memberPw);
             String memberName = (String) claims.get("memberName");
+            log.info("memberName-----------------------: " + memberName);
 
             List<String> roleNames = (List<String>) claims.get("roleNames");
+            log.info("roleNames-----------------------: " + roleNames);
 
             MemberDTO memberDTO = new MemberDTO(email, memberPw, memberName, roleNames);
+            log.info("memberDTO-----------------------: " + memberDTO);
 
             log.info("-----------------------------------");
             log.info(memberDTO);
@@ -113,7 +119,7 @@ public class JWTCheckFilter extends OncePerRequestFilter {
             Gson gson = new Gson();
             String msg = gson.toJson(Map.of("error", "ERROR_ACCESS_TOKEN"));
 
-            response.setContentType("application/json");
+            response.setContentType("application/json; charset=UTF-8");
             PrintWriter printWriter = response.getWriter();
             printWriter.println(msg);
             printWriter.close();
